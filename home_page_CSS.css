@@ -62,6 +62,24 @@
 
 
 
+/* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
+.supplier_logos{
+
+
+}
+
+.supplier_logos img{
+  max-width: 100%;
+  height: auto;
+  border: 1px solid black;
+}
+/* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+
+
 
 
 /* FOR CELLPHONES */
@@ -90,6 +108,11 @@
   body {
     background-color: rgb(0, 162, 255);
   }
+  .supplier_logos img{
+    max-width: 150%;
+    height: auto;
+  }
+
 }
 
 
@@ -112,27 +135,3 @@
 
 
 
-
-
-/*
-.pic_holder{
-  color:white;
-  position: fixed;
-  bottom: -100%;
-
-  opacity:0;
-
-  transform: translateX(-50%);
-
-  animation: smooth-appear 1s ease forwards;
-}
-
-
-
-@keyframes smooth-appear {
-  to{
-    bottom: 20px;
-    opacity:1;
-  }
-}
-*/
