@@ -34,32 +34,6 @@
   }
 
 
-  /* This is the typing text saying "Welcome to City Morgue Cycles */
-  .typewriter h1 {
-    color: white;
-    text-transform: capitalize;
-    font-size: 1.3em;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .3em solid #000; /* The typewriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    padding-top: 25px;
-    letter-spacing: .10em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #000; }
-  }
-
 
   
   /* This is the logo that is in the navbar */
@@ -133,6 +107,32 @@
 
 
 
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+  #imageSlider {
+    height: 100vh; /* Set the height to 100% of the viewport height */
+}
+
+
+#imageSlider {
+  height: 35vh; /* Set the height to 100% of the viewport height */
+}
+
+.carousel-inner {
+  height: 100%; /* Set the height of the carousel content to 100% */
+}
+
+.carousel-inner img {
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  height: 100%; /* Set the height of the images to 100% */
+}
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+
+
+
 
 
   /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
@@ -167,6 +167,14 @@
   body {
     background-color: lightgreen;
   }
+
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    #imageSlider {
+      height: 45vh; /* Set the height to 100% of the viewport height */
+  }
+      /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
 }
 
 /*  */
@@ -201,23 +209,45 @@
   body {
     background-color: rgb(255, 0, 119);
   }
+
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+  #imageSlider {
+    height: 100vh; /* Set the height to 100% of the viewport height */
 }
 
 
+#imageSlider {
+  height: 125vh; /* Set the height to 100% of the viewport height */
+}
 
-
-
-
-
-
-
-
-
+.carousel-inner {
+  height: 100%; /* Set the height of the carousel content to 100% */
+}
 
 .carousel-inner img {
-  max-height: 1000px; /* Adjust the height as needed */
   object-fit: cover; /* Maintain aspect ratio and cover the container */
+  height: 100%; /* Set the height of the images to 100% */
 }
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
