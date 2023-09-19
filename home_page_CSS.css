@@ -9,71 +9,6 @@
 
 
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-/* This is the logo that is in the navbar */
-.city_morgue_logo_navbar{
-  width: auto;
-  height: 300px;
-	animation: bounce 1s;
-
-
-
-}
-.city_morgue_logo_navbar:hover{
-	animation: bounce 1s;
-
-}
-
-
-
-
-
-
-
-@keyframes bounce {
-	0%, 20%, 60%, 100% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	}
-
-	40% {
-		-webkit-transform: translateY(-20px);
-		transform: translateY(-20px);
-	}
-
-	80% {
-		-webkit-transform: translateY(-10px);
-		transform: translateY(-10px);
-	}
-}
-
-
-/* This is the logo that is in the navbar BUT THE LINK*/
-.city_morgue_logo_navbar_link:hover{
-}
-
-
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-
-
-
-
-
-/* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
-.supplier_logos{
-
-
-}
-
-.supplier_logos img{
-  max-width: 100%;
-  height: auto;
-  border: 1px solid black;
-}
-/* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
 
 
 
@@ -84,10 +19,148 @@
 
 /* FOR CELLPHONES */
 @media screen and (min-width: 320px) {
+
   body {
     background-color: rgb(255, 0, 0);
   }
+
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+  /* The container that holds all the nav content */
+  .nav_container{
+    background-color: black;
+
+  }
+
+
+  /* This is the typing text saying "Welcome to City Morgue Cycles */
+  .typewriter h1 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.3em;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .3em solid #000; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    padding-top: 25px;
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #000; }
+  }
+
+
+  
+  /* This is the logo that is in the navbar */
+  .city_morgue_logo_navbar{
+    max-width: 15rem;
+    height: auto;
+  }
+
+    /*animation: bounce 2s; */
+  @keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+
+  /* This is the logo that is in the navbar BUT THE LINK*/
+  .city_morgue_logo_navbar_link:hover{
+
+  }
+
+
+
+
+
+
+
+/* THESE ARE FOR THE PHONE BUTTON TOGGLER*/
+  .navbar-toggler{
+    background-color: aqua;
+  }
+  .navbar_phone_toggler_icon{
+    background-color: antiquewhite;
+    color: brown;
+  }
+
+
+  /* This is the color of the links in the navbar */
+  .nav-link{
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .nav-link:hover, .nav-link:focus{
+    color: rgb(255, 0, 0);
+    font-size: 2em;
+  }
+
+  /* This is the nav link that the user is currently on */
+  .active_link{
+    color: blue;
+    text-decoration: underline;
+  }
+
+
+
+
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+
+  /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
+  .supplier_logos{
+
+  }
+
+  .supplier_logos img{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black;
+  }
+  /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FOR TABLETS / LARGE PHONES */
 @media screen and (min-width: 576px) {
@@ -130,6 +203,21 @@
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+.carousel-inner img {
+  max-height: 1000px; /* Adjust the height as needed */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
 
 
 

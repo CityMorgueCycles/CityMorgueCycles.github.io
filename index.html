@@ -38,6 +38,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet"> <!--   font-family: 'Rowdies', cursive; -->
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">  <!--   font-family: 'Righteous', cursive; -->
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet"> <!--  font-family: 'Hammersmith One', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"> <!--  font-family: 'Poppins', sans-serif; -->
     <!-- GOOGLE FONTS -->
 
 
@@ -55,36 +56,126 @@
 
 
   <header>
-    <nav class="navbar navbar-expand-lg bg-light ">
-      <div class="container-fluid   text-center  "> <!-- justify-content-center  == sets hamburger in center not edge -->
+    <nav class="  "> <!-- navbar -->
+      <div class=" nav_container    text-center"> <!-- text-center == sets image into the center  ||  justify-content-center  == sets hamburger in center not edge -->
 
+
+        <div class="navbar-nav justify-content-center">
+          <div class="typewriter">
+            <h1>Welcome to City Morgue Cycles</h1>
+          </div>
+        </div>
 
         <!-- LOGO -->
-        <a class="city_morgue_logo_navbar_link" href="index.html"><img src="pictures/logos/city_morgue_cycles_zombie_hand_logo-removebg.png" class="city_morgue_logo_navbar" alt="City Morgue Cycles Logo"></a>
+        <a class="city_morgue_logo_navbar_link" href="index.html">
+          <img src="pictures/logos/city_morgue_cycles_zombie_hand_logo-removebg.png" class="city_morgue_logo_navbar" alt="City Morgue Cycles Logo"> <!-- ADD THESE TO THE IMAGE TO OPEN THE NAV MENU ==  data-bs-toggle="collapse" data-bs-target="#collapseOnPhone" -->
+        </a>
         <!-- LOGO -->
-
-
-        <!-- Phone's Hamburger Button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnPhone" aria-controls="collapseOnPhone" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Phone's Hamburger Button -->
 
 
 
         <!-- Nav-link Content -->
+        <!--
+        <div class="navbar-nav justify-content-center">
+          <div class="row">
+            <div class="col-sm-6">
+              <a class="nav-link active_link" aria-current="page" href="index.html">Home</a>
+            </div>
+
+            <div class="col-sm-6">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+        -->
+        <!-- Nav-link Content -->
+
+
+
+
+<!-- ADD THE THINGS COMMENTED OUT BELOW TO ADD THE MOBILE HAMBURGER -->
+        <!-- Phone's Hamburger Button -->
+        <!--
+        <div class="text-center">
+          <button class="navbar-toggler   " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnPhone" aria-controls="collapseOnPhone" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars navbar_phone_toggler_icon"></i>
+          </button>
+        </div>
+        -->
+        <!-- Phone's Hamburger Button -->
+
+        <!-- Nav-link Content -->
+        <!--
         <div class="collapse navbar-collapse  text-center" id="collapseOnPhone">
           <div class="navbar-nav justify-content-center">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active_link" aria-current="page" href="index.html">Home</a>
             <a class="nav-link" href="contact.html">Contact</a>
           </div>
         </div>
+        -->
         <!-- Nav-link Content -->
+<!-- ADD THE THINGS COMMENTED OUT ABOVE TO ADD THE MOBILE HAMBURGER -->
+
 
 
       </div> <!-- End of container div -->
     </nav>
   </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap Carousel -->
+<div id="imageSlider" class="carousel slide" data-bs-ride="carousel">
+
+
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="pictures/bikes/flaming_bike.JPG" class="d-block h-50 w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+          <img src="pictures/bikes/black_large_bike.jpg" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+          <img src="pictures/bikes/bike_under_bridge.JPG" class="d-block w-100" alt="Slide 3">
+      </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#imageSlider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#imageSlider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </a>
+
+  <!-- This is the little indicators at the bottom of the images-->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <!-- This is the little indicators at the bottom of the images-->
+
+</div>
+<!-- End of Bootstrap Carousel -->
+
+
+
+
+
+
 
 
 
