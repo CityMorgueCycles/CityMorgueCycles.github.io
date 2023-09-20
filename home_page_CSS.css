@@ -9,6 +9,10 @@
 
 
 
+footer{
+  background-color: #000;
+  color: #fff;
+}
 
 
 
@@ -16,8 +20,7 @@
 
 
 
-
-/* FOR CELLPHONES */
+/* 11111111111111111111111111111 FOR CELLPHONES 1111111111111111111111111111*/
 @media screen and (min-width: 320px) {
 
   body {
@@ -25,29 +28,29 @@
   }
 
 
-  /* ~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
   /* The container that holds all the nav content */
   .nav_container{
-    background-color: black;
-
+    background-color: #131212;
   }
 
 
 
+    /* ............ H1 TYPEWRITER  ............*/
   /* This is the typing text saying "Welcome to City Morgue Cycles */
   .typewriter h1 {
     color: white;
     text-transform: capitalize;
     font-size: 1.3em;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .3em solid #000; /* The typewriter cursor */
+    border-right: .3em solid #0000; /* The typewriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     padding-top: 25px;
     letter-spacing: .10em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(50, end),
+      typing 3.2s steps(80, end),
       blink-caret .75s step-end infinite;
   }
   /* The typing effect */
@@ -58,32 +61,32 @@
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #000; }
+    50% { border-color: #0000; }
   }
-
-  
+    /* ............ H1 TYPEWRITER  ............*/
 
 
 
   /* This is the logo that is in the navbar */
   .city_morgue_logo_navbar{
-    max-width: 15rem;
+    max-width: 16rem;
     height: auto;
-
+    
+    padding-top: 1em;
+    
+    /* Calls the slideInFromLeft animation for the logo*/
     animation: 1s ease-out 0s 1 slideInFromLeft;
-
   }
 
-  /* animation: 1s ease-out 0s 1 slideInFromLeft; */
+  /* animation: 1s ease-out 0s 1 slideInFromLeft;  */
   @keyframes slideInFromLeft {
     0% {
-      transform: translateX(-200%);
+      transform: translateX(-180%);
     }
     100% {
       transform: translateX(0);
     }
   }
-
     /*animation: bounce 2s; */
   @keyframes bounce {
     0%, 20%, 60%, 100% {
@@ -101,6 +104,7 @@
       transform: translateY(-10px);
     }
   }
+
 
 
   /* This is the logo that is in the navbar BUT THE LINK*/
@@ -141,37 +145,96 @@
     text-decoration: underline;
   }
 
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
 
 
-  /* ~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+  /*``````````````````````````````` MAIN CONTENT ``````````````````````````````` */
+
+
+
+  .what_we_do_container{
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+    color: #fff;
+    background-color: #131212;
+  }
+
+  .what_we_do_header{
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+  }
 
 
 
 
+
+
+
+
+
+
+
+  @keyframes reveal {
+    from { opacity: 0; clip-path: inset(0% 60% 0% 50%); }
+    to { opacity: 1; clip-path: inset(0% 0% 0% 0%); }
+  }
+  
+  .revealing-image {
+    animation: auto linear reveal both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+  }
+
+
+
+
+
+  @keyframes animate-in {
+    0% { opacity: 0; transform: translateY(100%); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes animate-out {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-100%); }
+  }
+  
+  .list-view {
+    animation: animate-in linear forwards,
+               animate-out linear forwards;
+    animation-timeline: view();
+    animation-range: entry, exit;
+  }
+
+
+
+
+
+
+
+  
 
 
 
   /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
   #imageSlider {
     height: 100vh; /* Set the height to 100% of the viewport height */
-}
+  }
 
+  #imageSlider {
+    height: 45vh; /* Set the height to 100% of the viewport height */
+  }
 
-#imageSlider {
-  height: 35vh; /* Set the height to 100% of the viewport height */
-}
+  .carousel-inner {
+    height: 100%; /* Set the height of the carousel content to 100% */
+  }
 
-.carousel-inner {
-  height: 100%; /* Set the height of the carousel content to 100% */
-}
-
-.carousel-inner img {
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
-  height: 100%; /* Set the height of the images to 100% */
-}
+  .carousel-inner img {
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    height: 100%; /* Set the height of the images to 100% */
+  }
 
   /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
@@ -184,15 +247,24 @@
   /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
   .supplier_logos{
 
-  }
-
+  } 
+/**/
   .supplier_logos img{
     max-width: 100%;
     height: auto;
     border: 1px solid black;
   }
   /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
-}
+
+
+  /*``````````````````````````````` MAIN CONTENT /*``````````````````````````````` */
+
+
+
+
+
+
+}/* 11111111111111111111111111111 FOR CELLPHONES 1111111111111111111111111111*/
 
 
 
@@ -216,12 +288,14 @@
 
 
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    #imageSlider {
-      height: 45vh; /* Set the height to 100% of the viewport height */
-  }
+
       /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 }
+
+
+
+
 
 /*  */
 @media screen and (min-width: 768px) {
@@ -260,9 +334,7 @@
   /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 
-#imageSlider {
-  height: 125vh; /* Set the height to 100% of the viewport height */
-}
+
 
   /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 

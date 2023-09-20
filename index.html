@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="home_page_CSS.css">
     <!-- Index's CSS -->
 
+    <!-- Index's JAVASCRIPT-->
+    <link rel="javascript" href="home_page_JAVASCRIPT.js">
+    <!-- Index's JAVASCRIPT-->
+
+
 
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="pictures/favicon_io/apple-touch-icon.png">
@@ -59,7 +64,7 @@
     <nav class="  "> <!-- navbar -->
       <div class=" nav_container    text-center"> <!-- text-center == sets image into the center  ||  justify-content-center  == sets hamburger in center not edge -->
 
-
+        <!-- Text that writes like a type writer above the logo-->
         <div class="navbar-nav justify-content-center">
           <div class="typewriter">
             <h1>Welcome to City Morgue Cycles</h1>
@@ -72,7 +77,6 @@
           <img src="pictures/logos/city_morgue_cycles_zombie_hand_logo-removebg.png" class="city_morgue_logo_navbar" alt="City Morgue Cycles Logo"> <!-- ADD THESE TO THE IMAGE TO OPEN THE NAV MENU ==  data-bs-toggle="collapse" data-bs-target="#collapseOnPhone" -->
         </a>
         <!-- LOGO -->
-
 
 
         <!-- Nav-link Content -->
@@ -90,9 +94,6 @@
         </div>
         -->
         <!-- Nav-link Content -->
-
-
-
 
 <!-- ADD THE THINGS COMMENTED OUT BELOW TO ADD THE MOBILE HAMBURGER -->
         <!-- Phone's Hamburger Button -->
@@ -133,57 +134,32 @@
 
 
 
-
-
-
-<!-- Bootstrap Carousel -->
-<div id="imageSlider" class="carousel slide" data-bs-ride="carousel">
-
-
-  <div class="carousel-inner">
-      <div class="carousel-item active">
-          <img src="pictures/bikes/flaming_bike.JPG" class="d-block h-50 w-100" alt="Slide 1">
-      </div>
-      <div class="carousel-item">
-          <img src="pictures/bikes/black_large_bike.jpg" class="d-block w-100" alt="Slide 2">
-      </div>
-      <div class="carousel-item">
-          <img src="pictures/bikes/bike_under_bridge.JPG" class="d-block w-100" alt="Slide 3">
-      </div>
-  </div>
-
-  <a class="carousel-control-prev" href="#imageSlider" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#imageSlider" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-  </a>
-
-  <!-- This is the little indicators at the bottom of the images-->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <!-- This is the little indicators at the bottom of the images-->
-
-</div>
-<!-- End of Bootstrap Carousel -->
-
-
-
-
-
-
-
-
-
-
-
   <main>
-    <h1 class="text-center">City Morgue Cycles</h1>
+
+
+    <div class="container-fluid  what_we_do_container    list-view">
+      <div class="">
+        <h1 class="text-center what_we_do_header  ">What We Do</h1>
+      </div>
+      <div class="">
+        <p class="text-center">ADD WHAT YOU DO OR SPECIALIZE IN HERE</p>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="container-fluid  what_we_do_container         revealing-image  list-view">
+      <div class="">
+        <h1 class="text-center what_we_do_header ">About Us</h1>
+      </div>
+      <div class="">
+        <p class="text-center">ADD WHAT YOU DO OR SPECIALIZE IN HERE</p>
+      </div>
+    </div>
+
 
 
 
@@ -215,21 +191,94 @@
 
 
 
+        <!-- Bootstrap Carousel -->
+    <div id="imageSlider" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- IMAGES IN CAROUSEL -->
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="pictures/bikes/flaming_bike_large.JPG" class="d-block w-100" alt="Slide 1">
+          </div>
+          <div class="carousel-item">
+              <img src="pictures/bikes/black_large_bike.jpg" class="d-block w-100" alt="Slide 2">
+          </div>
+          <div class="carousel-item">
+              <img src="pictures/bikes/bike_under_bridge.JPG" class="d-block w-100" alt="Slide 3">
+          </div>
+      </div>
+      <!-- IMAGES IN CAROUSEL -->
+
+
+        <!-- LEFT BUTTON -->
+        <a class="carousel-control-prev" href="#imageSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <!-- LEFT BUTTON -->
+
+        <!-- RIGHT BUTTON -->
+        <a class="carousel-control-next" href="#imageSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+        <!-- RIGHT BUTTON -->
+
+      <!-- This is the little indicators at the bottom of the images-->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <!-- This is the little indicators at the bottom of the images-->
+
+    </div>
+    <!-- End of Bootstrap Carousel -->
+
+
 
 
 
   </main>
 
-  <footer>
-    <!-- place footer here -->
+
+
+
+  <footer class="text-center">
+    <!-- Copyright -->
+    <div class="text-center p-3">
+                  <!-- This javascript should auto update the copyright year -->
+      © <script>document.write(new Date().getFullYear());</script> City Morgue Cycles - All Rights Reserved.
+    </div>
+    <!-- Copyright -->
   </footer>
 
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </body>
 
 </html>
