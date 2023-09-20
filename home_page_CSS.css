@@ -1,4 +1,4 @@
-/*  */
+/* COLORS:  #64c3a3 , #d6c279 */
 
 
 
@@ -31,111 +31,112 @@ footer{
 
   /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-  /* The container that holds all the nav content */
-  .nav_container{
-    background-color: #131212;
-  }
-
-
-
-    /* ............ H1 TYPEWRITER  ............*/
-  /* This is the typing text saying "Welcome to City Morgue Cycles */
-  .typewriter h1 {
-    color: white;
-    text-transform: capitalize;
-    font-size: 1.3em;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .3em solid #0000; /* The typewriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    padding-top: 25px;
-    letter-spacing: .10em; /* Adjust as needed */
-    animation: 
-      typing 3.2s steps(80, end),
-      blink-caret .75s step-end infinite;
-  }
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #0000; }
-  }
-    /* ............ H1 TYPEWRITER  ............*/
-
-
-
-
-  /* This is the h1 text saying "Welcome to City Morgue Cycles"*/
-  .welcome_text{
-    color: white;
-    text-transform: capitalize;
-    font-size: 1.7em;
-  
-    padding-top: 30px;
-  
-    animation: 1s ease-out 0s 1 slideInFromRight;
-  }
-  /* animation: 1s ease-out 0s 1 slideInFromRight;  */
-  @keyframes slideInFromRight {
-    0% {
-      transform: translateX(180%);
+    /* The container that holds all the nav content */
+    .nav_container{
+      background-color: #131212;
     }
-    100% {
-      transform: translateX(0);
+
+
+
+      /* ............ H1 TYPEWRITER  ............*/
+    /* This is the typing text saying "Welcome to City Morgue Cycles */
+    .typewriter h1 {
+      color: white;
+      text-transform: capitalize;
+      font-size: 1.3em;
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      border-right: .3em solid #0000; /* The typewriter cursor */
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      padding-top: 25px;
+      letter-spacing: .10em; /* Adjust as needed */
+      animation: 
+        typing 3.2s steps(80, end),
+        blink-caret .75s step-end infinite;
     }
-  }
+    /* The typing effect */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #0000; }
+    }
+      /* ............ H1 TYPEWRITER  ............*/
 
 
 
 
-  /* This is the logo that is in the navbar */
-  .city_morgue_logo_navbar{
-    max-width: 20rem;
-    height: auto;
+    /* This is the h1 text saying "Welcome to City Morgue Cycles"*/
+    .welcome_text{
+      color: white;
+      text-transform: capitalize;
+      font-size: 1.7em;
     
-    padding-top: 1em;
+      padding-top: 30px;
     
-    /* Calls the slideInFromLeft animation for the logo*/
-    animation: 1s ease-out 0s 1 slideInFromLeft;
-  }
-
-  /* animation: 1s ease-out 0s 1 slideInFromLeft;  */
-  @keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-180%);
+      animation: 1s ease-out 0s 1 slideInFromRight;
     }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-    /*animation: bounce 2s; */
-  @keyframes bounce {
-    0%, 20%, 60%, 100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+    /* animation: 1s ease-out 0s 1 slideInFromRight;  */
+    @keyframes slideInFromRight {
+      0% {
+        transform: translateX(180%);
+      }
+      100% {
+        transform: translateX(0);
+      }
     }
 
-    40% {
-      -webkit-transform: translateY(-20px);
-      transform: translateY(-20px);
+
+
+
+    /* This is the logo that is in the navbar */
+    .city_morgue_logo_navbar{
+      max-width: 20rem;
+      height: auto;
+      
+      padding-top: 1em;
+
+      
+      /* Calls the slideInFromLeft animation for the logo*/
+      animation: 1s ease-out 0s 1 slideInFromLeft;
     }
 
-    80% {
-      -webkit-transform: translateY(-10px);
-      transform: translateY(-10px);
+    /* animation: 1s ease-out 0s 1 slideInFromLeft;  */
+    @keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-180%);
+      }
+      100% {
+        transform: translateX(0);
+      }
     }
-  }
+
+      /*animation: bounce 2s; */
+    @keyframes bounce {
+      0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+
+      40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+      }
+
+      80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+      }
+    }
 
 
 
-  /* This is the logo that is in the navbar BUT THE LINK*/
-  .city_morgue_logo_navbar_link:hover{
-  }
+    /* This is the logo that is in the navbar BUT THE LINK*/
+    .city_morgue_logo_navbar_link:hover{
+    }
 
 
 
@@ -143,32 +144,32 @@ footer{
 
 
 
-/* THESE ARE FOR THE PHONE BUTTON TOGGLER*/
-  .navbar-toggler{
-    background-color: aqua;
-  }
-  .navbar_phone_toggler_icon{
-    background-color: antiquewhite;
-    color: brown;
-  }
+  /* THESE ARE FOR THE PHONE BUTTON TOGGLER*/
+    .navbar-toggler{
+      background-color: aqua;
+    }
+    .navbar_phone_toggler_icon{
+      background-color: antiquewhite;
+      color: brown;
+    }
 
 
-  /* This is the color of the links in the navbar */
-  .nav-link{
-    color: white;
-    font-size: 1.5em;
-  }
+    /* This is the color of the links in the navbar */
+    .nav-link{
+      color: white;
+      font-size: 1.5em;
+    }
 
-  .nav-link:hover, .nav-link:focus{
-    color: rgb(255, 0, 0);
-    font-size: 2em;
-  }
+    .nav-link:hover, .nav-link:focus{
+      color: rgb(255, 0, 0);
+      font-size: 2em;
+    }
 
-  /* This is the nav link that the user is currently on */
-  .active_link{
-    color: blue;
-    text-decoration: underline;
-  }
+    /* This is the nav link that the user is currently on */
+    .active_link{
+      color: blue;
+      text-decoration: underline;
+    }
 
   /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -180,40 +181,73 @@ footer{
 
 
 
-  .what_we_do_container{
-    padding-top: 7rem;
-    padding-bottom: 2rem;
-    color: #fff;
-    background-color: #131212;
-  }
+  /* dDdDdDdDdDdDdDdDdDdD MAIN INFO dDdDdDdDdDdDdDdDdDdD*/
 
-  .what_we_do_header{
-    text-transform: uppercase;
-    padding-bottom: 1.5rem;
-  }
+    /* This is the main container that holds all the content below*/
+    .main_information_container{
+
+      /* Padding from the logo */
+      padding-top: 4.5rem; 
+
+      background-color: #131212;
+
+      /* Padding under the last item in this div */
+      padding-bottom: 2rem; 
+    }
+
+    /* The lines above and below all of the content*/
+    hr{
+      border: 3.5px solid #dcc590;
+
+      width: 90%;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* This is the div that holds the text*/
+    .informational_div_holder{
+      /* margin-top: 7rem; */
+
+      /* Space between each item */
+      margin-bottom: 5rem;
+      background-color: #131212;
+      color: #fff;
+
+      /* width: 50%; */
+    }
+
+    /* The header of the information Ex: What We Do | About Us */
+    .informational_header{
+      text-transform: uppercase;
+
+      font-size: 1.7rem;
+
+      /* Adds space between the hr  */
+      margin-top: 1.5rem;
+
+      /* Adds space under the header before the actual text */
+      margin-bottom: 1.5rem;
+    }
+
+    /* The actual Text under the header */
+    .informational_text{
+      font-size: 1em;
+
+      /* Adds the same amount of space under text above the hr MAKE THE SAME AS .informational_header*/
+      margin-bottom: 1.5rem;
+    }
 
 
-
-
-
-
-
-
-
-
-
-  @keyframes reveal {
-    from { opacity: 0; clip-path: inset(0% 50% 0% 50%); }
-    to { opacity: 1; clip-path: inset(0% 0% 0% 0%); }
-  }
-  
-  .revealing-image {
-    animation: auto linear reveal both;
-    animation-timeline: view();
-    animation-range: entry 50% cover 50%;
-  }
-
-
+    @keyframes reveal {
+      from { opacity: 0; clip-path: inset(0% 50% 0% 50%); }
+      to { opacity: 1; clip-path: inset(0% 0% 0% 0%); }
+    }
+    .reveal-item {
+      animation: auto linear reveal both;
+      animation-timeline: view();
+      animation-range: entry 100% cover 50%;
+    }
 
   /* This will make the object its given to (list-view), to disappear upwards when screen scrolls down */
   /*
@@ -233,6 +267,18 @@ footer{
     animation-range: entry, exit;
   }
   */
+
+
+
+  /* dDdDdDdDdDdDdDdDdDdD DESCRIPTIONS dDdDdDdDdDdDdDdDdDdD*/
+
+
+
+
+
+
+
+
 
 
 
@@ -278,6 +324,18 @@ footer{
     max-width: 100%;
     height: auto;
     border: 1px solid black;
+  }
+
+
+  @keyframes reveal {
+    from { opacity: 0; clip-path: inset(0% 50% 0% 50%); }
+    to { opacity: 1; clip-path: inset(0% 0% 0% 0%); }
+  }
+  
+  .revealing-image {
+    animation: auto linear reveal both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
   }
   /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
 
