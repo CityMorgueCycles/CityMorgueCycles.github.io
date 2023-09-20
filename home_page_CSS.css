@@ -8,6 +8,10 @@
 
 
 
+body {
+  /* background-image: radial-gradient( circle farthest-corner at 50.3% 44.5%,  #223242 30%, #131212 100.2% ); */
+}
+
 
 footer{
   background-color: #131212;
@@ -25,10 +29,11 @@ footer{
 
 
   body {
-    /* background-image: linear-gradient(to right, #434343 0%, black 100%); 3e5368*/
 
+    background-color: red;
+    
+    /* background-image: radial-gradient( circle farthest-corner at 50.3% 44.5%,  #223242 30%, #131212 100.2% ); */
 
-    background-image: radial-gradient( circle farthest-corner at 50.3% 44.5%,  #131212 30%, #283a4c 100.2% );
   }
 
 
@@ -74,10 +79,28 @@ footer{
 
     /* This is the h1 text saying "Welcome to City Morgue Cycles"*/
     .welcome_text{
-      color: white;
+      color: #fff;
       text-transform: capitalize;
       font-size: 2em;
 
+      /* 3D Text Shadow */
+      text-shadow: 
+      0 1px 0 #2e2e2e, 
+      0 2px 0 #2c2c2c, 
+      0 3px 0 #2a2a2a, 
+      0 4px 0 #282828, 
+      0 5px 0 #262626, 
+      0 6px 0 #242424, 
+      0 7px 0 #222, 
+      0 8px 0 #202020, 
+      0 9px 0 #1e1e1e, 
+      0 10px 0 #1c1c1c, 
+      0 11px 0 #1a1a1a, 
+      0 12px 0 #181818, 
+      0 13px 0 #161616, 
+      0 14px 0 #141414, 
+      0 15px 0 #121212, 
+      0 22px 30px rgba(0, 0, 0, 0.9);
     
       padding-top: 30px;
     
@@ -332,42 +355,6 @@ footer{
 
 
 
-
-
-
-
-
-  
-
-
-
-  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-  #imageSlider {
-    height: 100vh; /* Set the height to 100% of the viewport height */
-    background-color: #131212;
-  }
-
-  #imageSlider {
-    height: 45vh; /* Set the height to 100% of the viewport height */
-  }
-
-  .carousel-inner {
-    height: 100%; /* Set the height of the carousel content to 100% */
-  }
-
-  .carousel-inner img {
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-    height: 100%; /* Set the height of the images to 100% */
-  }
-
-  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-
-
-
-
-
-
   /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
 
   /* This is the header above the logos */
@@ -397,12 +384,57 @@ footer{
     to { opacity: 1; clip-path: inset(0% 0% 0% 0%); }
   }
   
-  .revealing-image {
+  .revealing-logo {
     animation: auto linear logo_reveal both;
     animation-timeline: view();
     animation-range: entry 100% cover 50%;
   }
   /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+  /* This is the header above the image carousel */
+  .carousel_header{
+    color: #fff;
+
+    font-size: 1.8rem;
+
+    /* Space under the last arm logo */
+    padding-top: 4.5rem; 
+    /* Space under the "Bikes Out Of Our Shop" Text */
+    padding-bottom: 1.5rem; 
+
+    text-transform: capitalize;
+  }
+
+
+  #imageSlider {
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    background-color: #131212;
+  }
+
+  #imageSlider {
+    height: 45vh; /* Set the height to 100% of the viewport height */
+  }
+
+  .carousel-inner {
+    height: 100%; /* Set the height of the carousel content to 100% */
+  }
+
+  .carousel-inner img {
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    height: 100%; /* Set the height of the images to 100% */
+  }
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+
 
 
   /*``````````````````````````````` MAIN CONTENT /*``````````````````````````````` */
