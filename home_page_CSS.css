@@ -99,7 +99,6 @@ footer{
       
       padding-top: 1em;
 
-      
       /* Calls the slideInFromLeft animation for the logo*/
       animation: 1s ease-out 0s 1 slideInFromLeft;
     }
@@ -193,6 +192,8 @@ footer{
 
       /* Padding under the last item in this div */
       padding-bottom: 2rem; 
+
+      
     }
 
     /* The lines above and below all of the content*/
@@ -214,6 +215,7 @@ footer{
       background-color: #131212;
       color: #fff;
 
+
       /* width: 50%; */
     }
 
@@ -228,6 +230,8 @@ footer{
 
       /* Adds space under the header before the actual text */
       margin-bottom: 1.5rem;
+
+
     }
 
     /* The actual Text under the header */
@@ -239,17 +243,49 @@ footer{
     }
 
 
+    /*ccccc CONTACT US ccccc */
     /* This is under CONTACT US it is the direct call and email to Chris*/
     .tel_and_mailto{
       color: #fff;
       text-decoration: none;
+
+      /* This is needed for the grow effect on the hover*/
+      transition: all .2s ease-in-out;
     }
     .tel_and_mailto:hover, .tel_and_mailto:focus{
       color: #fff;
-      font-size: 1.05em;
+      font-size: 1.2em;
+
+      transform: scale(1.5);
     }
 
 
+    /* This is the facebook and instagram logos link*/
+    .social_media_icons_links{
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* This is the facebook and instagram logos*/
+    .social_media_icons{
+      font-size: 2.2em;
+      padding-right: 1.5em;
+      padding-left: 1.5em;
+
+      /* This is needed for the grow effect on the hover*/
+      transition: all .2s ease-in-out;
+    }
+
+    .social_media_icons:hover, .social_media_icons:focus{
+      font-size: 2.2em;
+
+      color: #fff;
+
+      transform: scale(1.5);
+    }
+
+
+    /*ccccc CONTACT US ccccc */
 
     @keyframes reveal {
       from { opacity: 0; clip-path: inset(0% 50% 0% 50%); }
@@ -287,11 +323,6 @@ footer{
 
 
 
-
-  @keyframes come-in {
-    0%        { transform: translateY(150px); } /* Your element's starting point. */
-    100%    { transform: translateY(0px); } /* Ending point. */
-    }
 
 
 
