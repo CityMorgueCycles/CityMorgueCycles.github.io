@@ -109,7 +109,6 @@ footer{
 
   /* This is the logo that is in the navbar BUT THE LINK*/
   .city_morgue_logo_navbar_link:hover{
-
   }
 
 
@@ -190,8 +189,8 @@ footer{
 
 
 
-
-
+  /* This will make the object its given to (list-view), to disappear upwards when screen scrolls down */
+  /*
   @keyframes animate-in {
     0% { opacity: 0; transform: translateY(100%); }
     100% { opacity: 1; transform: translateY(0); }
@@ -201,13 +200,13 @@ footer{
     100% { opacity: 0; transform: translateY(-100%); }
   }
   
-  .list-view {
+  .list-view{
     animation: animate-in linear forwards,
                animate-out linear forwards;
     animation-timeline: view();
     animation-range: entry, exit;
   }
-
+  */
 
 
 
