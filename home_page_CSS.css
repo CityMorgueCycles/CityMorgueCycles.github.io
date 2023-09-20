@@ -23,6 +23,7 @@ footer{
 /* 11111111111111111111111111111 FOR CELLPHONES 1111111111111111111111111111*/
 @media screen and (min-width: 320px) {
 
+
   body {
     background-color: rgb(255, 0, 0);
   }
@@ -67,9 +68,33 @@ footer{
 
 
 
+
+  /* This is the h1 text saying "Welcome to City Morgue Cycles"*/
+  .welcome_text{
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.7em;
+  
+    padding-top: 30px;
+  
+    animation: 1s ease-out 0s 1 slideInFromRight;
+  }
+  /* animation: 1s ease-out 0s 1 slideInFromRight;  */
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(180%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
+
+
   /* This is the logo that is in the navbar */
   .city_morgue_logo_navbar{
-    max-width: 16rem;
+    max-width: 25rem;
     height: auto;
     
     padding-top: 1em;
@@ -87,6 +112,7 @@ footer{
       transform: translateX(0);
     }
   }
+
     /*animation: bounce 2s; */
   @keyframes bounce {
     0%, 20%, 60%, 100% {
