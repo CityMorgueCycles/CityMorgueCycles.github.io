@@ -1577,7 +1577,7 @@ footer{
 
 /**/
   .supplier_logos img{
-    max-width: 105%;
+    max-width: 100%;
 
     height: auto;
   }
@@ -1928,7 +1928,7 @@ footer{
 /**/
   .supplier_logos img{
     max-width: max-content;
-    width: 430px;
+    width: 400px;
 
     height: auto;
   }
