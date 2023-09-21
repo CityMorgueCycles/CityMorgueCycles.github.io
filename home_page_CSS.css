@@ -1,4 +1,4 @@
-/* COLORS:  #64c3a3 , #d6c279 */
+/* COLORS:  #64c3a3 , #d6c279, #131212, #223242 */
 
 
 
@@ -9,7 +9,7 @@
 
 
 body {
-  /* background-image: radial-gradient( circle farthest-corner at 50.3% 44.5%,  #223242 30%, #131212 100.2% ); */
+  background-image: radial-gradient( circle farthest-corner at 50.3% 44.5%,  #223242 30%, #131212 100.2% );
 }
 
 
@@ -27,22 +27,15 @@ footer{
 /* 11111111111111111111111111111 FOR CELLPHONES 1111111111111111111111111111*/
 @media screen and (min-width: 320px) {
 
-
+  /*
   body {
-
     background-color: red;
-    
-    /* background-image: radial-gradient( circle farthest-corner at 50.3% 44.5%,  #223242 30%, #131212 100.2% ); */
-
   }
-
+  */
 
   /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-    /* The container that holds all the nav content */
-    .nav_container{
-      /* background-color: #131212; */
-    }
+
 
 
 
@@ -158,11 +151,6 @@ footer{
       }
     }
 
-
-
-    /* This is the logo that is in the navbar BUT THE LINK*/
-    .city_morgue_logo_navbar_link:hover{
-    }
 
 
 
@@ -371,7 +359,7 @@ footer{
 
     font-size: 1.8rem;
 
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
 
 /**/
@@ -417,7 +405,7 @@ footer{
     /* Space under the "Bikes Out Of Our Shop" Text */
     padding-bottom: 1.5rem; 
 
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
 
 
@@ -468,12 +456,33 @@ footer{
 
 
 
-/* FOR TABLETS / LARGE PHONES */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 22222222222222222222222222 FOR TABLETS / LARGE PHONES 22222222222222222222222222222*/
 @media screen and (min-width: 576px) {
+  /*
   body {
     background-color: lightgreen;
   }
-
+  */
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
@@ -794,7 +803,7 @@ footer{
 
     font-size: 2rem;
 
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
 
 /**/
@@ -840,7 +849,7 @@ footer{
     /* Space under the "Bikes Out Of Our Shop" Text */
     padding-bottom: 1.5rem; 
 
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
 
 
@@ -870,55 +879,1127 @@ footer{
 
   /*``````````````````````````````` MAIN CONTENT /*``````````````````````````````` */
 
-}
+}/* 22222222222222222222222222 FOR TABLETS / LARGE PHONES 22222222222222222222222222222*/
 
 
 
 
 
-/*  */
-@media screen and (min-width: 768px) {
-  body {
-    background-color: rgb(0, 131, 0);
-  }
-}
 
-/* LARGE TABLETS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 333333333333333333333333333333333 LARGE TABLETS 3333333333333333333333333333333333333333333333333*/
 @media screen and (min-width: 992px) {
+  /*
   body {
     background-color: rgb(0, 162, 255);
   }
-  .supplier_logos img{
-    max-width: 150%;
-    height: auto;
+  */
+  
+  
+    /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+    /* This is the h1 text saying "Welcome to City Morgue Cycles"*/
+    .welcome_text{
+      color: #fff;
+      text-transform: capitalize;
+      font-size: 3em;
+
+      /* 3D Text Shadow */
+      text-shadow: 
+      0 1px 0 #2e2e2e, 
+      0 2px 0 #2c2c2c, 
+      0 3px 0 #2a2a2a, 
+      0 4px 0 #282828, 
+      0 5px 0 #262626, 
+      0 6px 0 #242424, 
+      0 7px 0 #222, 
+      0 8px 0 #202020, 
+      0 9px 0 #1e1e1e, 
+      0 10px 0 #1c1c1c, 
+      0 11px 0 #1a1a1a, 
+      0 12px 0 #181818, 
+      0 13px 0 #161616, 
+      0 14px 0 #141414, 
+      0 15px 0 #121212, 
+      0 22px 30px rgba(0, 0, 0, 0.9);
+    
+      padding-top: 30px;
+    
+      animation: 1s ease-out 0s 1 slideInFromRight;
+    }
+    /* animation: 1s ease-out 0s 1 slideInFromRight;  */
+    @keyframes slideInFromRight {
+      0% {
+        transform: translateX(180%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+
+
+
+    /* This is the logo that is in the navbar */
+    .city_morgue_logo_navbar{
+      max-width: 30rem;
+      height: auto;
+      
+      padding-top: 1.3em;
+
+      /* Calls the slideInFromLeft animation for the logo*/
+      animation: 1s ease-out 0s 1 slideInFromLeft;
+    }
+
+    /* animation: 1s ease-out 0s 1 slideInFromLeft;  */
+    @keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-180%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+      /*animation: bounce 2s; */
+    @keyframes bounce {
+      0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+
+      40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+      }
+
+      80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+      }
+    }
+
+
+
+
+
+  /* THESE ARE FOR THE PHONE BUTTON TOGGLER*/
+    .navbar-toggler{
+      background-color: aqua;
+    }
+    .navbar_phone_toggler_icon{
+      background-color: antiquewhite;
+      color: brown;
+    }
+
+
+    /* This is the color of the links in the navbar */
+    .nav-link{
+      color: white;
+      font-size: 1.5em;
+    }
+
+    .nav-link:hover, .nav-link:focus{
+      color: rgb(255, 0, 0);
+      font-size: 2em;
+    }
+
+    /* This is the nav link that the user is currently on */
+    .active_link{
+      color: blue;
+      text-decoration: underline;
+    }
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+  /*``````````````````````````````` MAIN CONTENT ``````````````````````````````` */
+
+
+
+  /* dDdDdDdDdDdDdDdDdDdD MAIN INFO dDdDdDdDdDdDdDdDdDdD*/
+
+    /* This is the main container that holds all the content below*/
+    .main_information_container{
+
+      /* Padding from the logo */
+      padding-top: 5rem; 
+
+      /* background-color: #131212; */
+
+      /* Padding under the last item in this div */
+      padding-bottom: 3rem; 
+
+      
+    }
+
+    /* The lines above and below all of the content*/
+    hr{
+      border: 4px solid #dcc590;
+
+      width: 90%;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* This is the div that holds the text*/
+    .informational_div_holder{
+      /* margin-top: 7rem; */
+
+      /* Space between each item */
+      margin-bottom: 5.3rem;
+
+   /* background-color: #131212; */
+      
+      color: #fff;
+
+
+      /* width: 50%; */
+    }
+
+    /* The header of the information Ex: What We Do | About Us */
+    .informational_header{
+      text-transform: uppercase;
+
+      font-size: 2.2rem;
+
+      /* Adds space between the hr  */
+      margin-top: 1.7rem;
+
+      /* Adds space under the header before the actual text */
+      margin-bottom: 1.7rem;
+
+
+    }
+
+    /* The actual Text under the header */
+    .informational_text{
+      font-size: 1.5em;
+
+      /* Adds the same amount of space under text above the hr MAKE THE SAME AS .informational_header*/
+      margin-bottom: 1.7rem;
+    }
+
+
+    /*ccccc CONTACT US ccccc */
+    /* This is under CONTACT US it is the direct call and email to Chris*/
+    .tel_and_mailto{
+      color: #fff;
+      text-decoration: none;
+
+      /* This is needed for the grow effect on the hover*/
+      transition: all .2s ease-in-out;
+    }
+    .tel_and_mailto:hover, .tel_and_mailto:focus{
+      color: #fff;
+      font-size: 1.2em;
+
+      transform: scale(1.5);
+    }
+
+    
+    .follow_us_text{
+      font-size: 1.6em;
+
+      /* Adds the same amount of space under text above the hr MAKE THE SAME AS .informational_header*/
+      margin-bottom: 1.7rem;
+    }
+
+
+    /* This is the facebook and instagram logos link*/
+    .social_media_icons_links{
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* This is the facebook and instagram logos*/
+    .social_media_icons{
+      font-size: 2.5em;
+      padding-right: 1.6em;
+      padding-left: 1.6em;
+
+      /* Adds the same amount of space under text above the hr MAKE THE SAME AS .informational_header*/
+      margin-bottom: 1rem;
+
+      /* This is needed for the grow effect on the hover*/
+      transition: all .2s ease-in-out;
+    }
+
+    .social_media_icons:hover, .social_media_icons:focus{
+      font-size: 2.4em;
+
+      color: #fff;
+
+      transform: scale(1.5);
+    }
+
+
+    /*ccccc CONTACT US ccccc */
+
+    @keyframes reveal { /*  */
+      from { opacity: 0; clip-path: inset(0% 100% 0% 100%); }
+      to { opacity: 1; clip-path: inset(0% 0% 0% 0%); }
+    }
+    .reveal-item {
+      animation: auto linear reveal both;
+      animation-timeline: view();
+      animation-range: entry 100% cover 50%;
+    }
+
+  /* This will make the object its given to (list-view), to disappear upwards when screen scrolls down */
+  /*
+  @keyframes animate-in {
+    0% { opacity: 0; transform: translateY(100%); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes animate-out {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-100%); }
+  }
+  
+  .list-view{
+    animation: animate-in linear forwards,
+               animate-out linear forwards;
+    animation-timeline: view();
+    animation-range: entry, exit;
+  }
+  */
+
+
+
+  /* dDdDdDdDdDdDdDdDdDdD DESCRIPTIONS dDdDdDdDdDdDdDdDdDdD*/
+
+
+
+
+
+
+
+  /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
+
+  /* This is the header above the logos */
+  .supplier_logos_header{
+    color: #fff;
+
+    font-size: 2.2rem;
+
+    text-transform: uppercase;
   }
 
-}
+/**/
+  .supplier_logos img{
+    max-width: 100%;
+    width: 55vw;
+
+    height: auto;
 
 
-/* FOR DESKTOPS */
+  }
+
+
+
+
+
+  @keyframes logo_reveal {
+    from { opacity: 0; clip-path: inset(50% 0% 50% 0%); }
+    to { opacity: 1; clip-path: inset(0% 0% 0% 0%); }
+  }
+  
+  .revealing-logo {
+    animation: auto linear logo_reveal both;
+    animation-timeline: view();
+    animation-range: entry 100% cover 45%;
+  }
+  /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+  /* This is the header above the image carousel */
+  .carousel_header{
+    color: #fff;
+
+    font-size: 2rem;
+
+
+    /* Space under the "Bikes Out Of Our Shop" Text */
+    padding-bottom: 2rem; 
+
+    text-transform: uppercase;
+  }
+
+
+  #imageSlider {
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    background-color: #131212;
+  }
+
+  #imageSlider {
+    height: 85vh; /* Set the height to 100% of the viewport height */
+  }
+
+  .carousel-inner {
+    height: 100%; /* Set the height of the carousel content to 100% */
+  }
+
+  .carousel-inner img {
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    height: 100%; /* Set the height of the images to 100% */
+  }
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+
+
+
+  /*``````````````````````````````` MAIN CONTENT /*``````````````````````````````` */
+
+
+}/* 333333333333333333333333333333333 LARGE TABLETS 3333333333333333333333333333333333333333333333333*/
+
+
+
+
+
+
+
+
+
+
+/* 44444444444444444444444444444444444444 FOR DESKTOPS 444444444444444444444444444444444*/
 @media screen and (min-width: 1200px) {
+  /*
   body {
     background-color: rgb(166, 255, 0);
   }
-}
+  */
 
-/* FOR HUGE MONITORS / TV's */
-@media screen and (min-width: 1400px) {
-  body {
-    background-color: rgb(255, 0, 119);
+  
+    /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+    /* This is the h1 text saying "Welcome to City Morgue Cycles"*/
+    .welcome_text{
+      color: #fff;
+      text-transform: capitalize;
+      font-size: 3.5em;
+
+      /* 3D Text Shadow */
+      text-shadow: 
+      0 1px 0 #2e2e2e, 
+      0 2px 0 #2c2c2c, 
+      0 3px 0 #2a2a2a, 
+      0 4px 0 #282828, 
+      0 5px 0 #262626, 
+      0 6px 0 #242424, 
+      0 7px 0 #222, 
+      0 8px 0 #202020, 
+      0 9px 0 #1e1e1e, 
+      0 10px 0 #1c1c1c, 
+      0 11px 0 #1a1a1a, 
+      0 12px 0 #181818, 
+      0 13px 0 #161616, 
+      0 14px 0 #141414, 
+      0 15px 0 #121212, 
+      0 22px 30px rgba(0, 0, 0, 0.9);
+    
+      padding-top: 30px;
+    
+      animation: 1s ease-out 0s 1 slideInFromRight;
+    }
+    /* animation: 1s ease-out 0s 1 slideInFromRight;  */
+    @keyframes slideInFromRight {
+      0% {
+        transform: translateX(180%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+
+
+
+    /* This is the logo that is in the navbar */
+    .city_morgue_logo_navbar{
+      max-width: 35rem;
+      height: auto;
+      
+      padding-top: 1.3em;
+
+      /* Calls the slideInFromLeft animation for the logo*/
+      animation: 1s ease-out 0s 1 slideInFromLeft;
+    }
+
+    /* animation: 1s ease-out 0s 1 slideInFromLeft;  */
+    @keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-200%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+      /*animation: bounce 2s; */
+    @keyframes bounce {
+      0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+
+      40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+      }
+
+      80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+      }
+    }
+
+
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+  /*``````````````````````````````` MAIN CONTENT ``````````````````````````````` */
+
+
+
+  /* dDdDdDdDdDdDdDdDdDdD MAIN INFO dDdDdDdDdDdDdDdDdDdD*/
+
+    /* This is the main container that holds all the content below*/
+    .main_information_container{
+
+      /* Padding from the logo */
+      padding-top: 5rem; 
+
+      /* background-color: #131212; */
+
+      /* Padding under the last item in this div */
+      padding-bottom: 3rem; 
+
+      
+    }
+
+    /* The lines above and below all of the content*/
+    hr{
+      border: 4px solid #dcc590;
+
+      width: 90%;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* This is the div that holds the text*/
+    .informational_div_holder{
+      /* margin-top: 7rem; */
+
+      /* Space between each item */
+      margin-bottom: 5.3rem;
+
+   /* background-color: #131212; */
+      
+      color: #fff;
+
+
+      /* width: 50%; */
+    }
+
+    /* The header of the information Ex: What We Do | About Us */
+    .informational_header{
+      text-transform: uppercase;
+
+      font-size: 2.5rem;
+
+      /* Adds space between the hr  */
+      margin-top: 1.7rem;
+
+      /* Adds space under the header before the actual text */
+      margin-bottom: 1.7rem;
+
+
+    }
+
+    /* The actual Text under the header */
+    .informational_text{
+      font-size: 1.5em;
+
+      /* Adds the same amount of space under text above the hr MAKE THE SAME AS .informational_header*/
+      margin-bottom: 1.7rem;
+    }
+
+
+    /*ccccc CONTACT US ccccc */
+    /* This is under CONTACT US it is the direct call and email to Chris*/
+    .tel_and_mailto{
+      color: #fff;
+      text-decoration: none;
+
+      /* This is needed for the grow effect on the hover*/
+      transition: all .2s ease-in-out;
+    }
+    .tel_and_mailto:hover, .tel_and_mailto:focus{
+      color: #fff;
+      font-size: 1.2em;
+
+      transform: scale(1.5);
+    }
+
+    
+    .follow_us_text{
+      font-size: 1.6em;
+
+      /* Adds the same amount of space under text above the hr MAKE THE SAME AS .informational_header*/
+      margin-bottom: 1.7rem;
+    }
+
+
+    /* This is the facebook and instagram logos link*/
+    .social_media_icons_links{
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* This is the facebook and instagram logos*/
+    .social_media_icons{
+      font-size: 2.65em;
+      padding-right: 1.6em;
+      padding-left: 1.6em;
+
+      /* Adds the same amount of space under text above the hr MAKE THE SAME AS .informational_header*/
+      margin-bottom: 1rem;
+
+      /* This is needed for the grow effect on the hover*/
+      transition: all .2s ease-in-out;
+    }
+
+    .social_media_icons:hover, .social_media_icons:focus{
+      font-size: 2.4em;
+
+      color: #fff;
+
+      transform: scale(1.5);
+    }
+
+
+    /*ccccc CONTACT US ccccc */
+
+    @keyframes reveal { /*  */
+      from { opacity: 0; clip-path: inset(0% 100% 0% 100%); }
+      to { opacity: 1; clip-path: inset(0% 0% 0% 0%); }
+    }
+    .reveal-item {
+      animation: auto linear reveal both;
+      animation-timeline: view();
+      animation-range: entry 100% cover 50%;
+    }
+
+  /* This will make the object its given to (list-view), to disappear upwards when screen scrolls down */
+  /*
+  @keyframes animate-in {
+    0% { opacity: 0; transform: translateY(100%); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes animate-out {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-100%); }
+  }
+  
+  .list-view{
+    animation: animate-in linear forwards,
+               animate-out linear forwards;
+    animation-timeline: view();
+    animation-range: entry, exit;
+  }
+  */
+
+
+
+  /* dDdDdDdDdDdDdDdDdDdD DESCRIPTIONS dDdDdDdDdDdDdDdDdDdD*/
+
+
+
+
+
+
+
+  /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
+
+  /* This is the header above the logos */
+  .supplier_logos_header{
+    color: #fff;
+
+    font-size: 2.5rem;
+
+    text-transform: uppercase;
+  }
+
+/**/
+  .supplier_logos img{
+    max-width: 105%;
+
+    height: auto;
   }
 
 
+
+  @keyframes logo_reveal {
+    from { opacity: 0; clip-path: inset(50% 0% 50% 0%); }
+    to { opacity: 1; clip-path: inset(0% 0% 0% 0%); }
+  }
+  
+  .revealing-logo {
+    animation: auto linear logo_reveal both;
+    animation-timeline: view();
+    animation-range: entry 100% cover 45%;
+  }
+  /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+  /* This is the header above the image carousel */
+  .carousel_header{
+    color: #fff;
+
+    font-size: 2.5rem;
+
+
+    /* Space under the "Bikes Out Of Our Shop" Text */
+    padding-bottom: 2rem; 
+
+    text-transform: uppercase;
+  }
+
+
+  #imageSlider {
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    background-color: #131212;
+  }
+
+  #imageSlider {
+    height: 95vh; /* Set the height to 100% of the viewport height */
+  }
+
+  .carousel-inner {
+    height: 100%; /* Set the height of the carousel content to 100% */
+  }
+
+  .carousel-inner img {
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    height: 100%; /* Set the height of the images to 100% */
+  }
+
   /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 
 
 
+
+  /*``````````````````````````````` MAIN CONTENT /*``````````````````````````````` */
+
+}/* 44444444444444444444444444444444444444 FOR DESKTOPS 444444444444444444444444444444444*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 555555555555555555555555555555555555 FOR HUGE MONITORS / TV's 55555555555555555555555555555555555*/
+@media screen and (min-width: 1400px) {
+
+  /*
+  body {
+    background-color: rgb(255, 0, 119);
+  }
+  */
+
+
+    
+    /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+    /* This is the h1 text saying "Welcome to City Morgue Cycles"*/
+    .welcome_text{
+      color: #fff;
+      text-transform: capitalize;
+      font-size: 4em;
+
+      /* 3D Text Shadow */
+      text-shadow: 
+      0 1px 0 #2e2e2e, 
+      0 2px 0 #2c2c2c, 
+      0 3px 0 #2a2a2a, 
+      0 4px 0 #282828, 
+      0 5px 0 #262626, 
+      0 6px 0 #242424, 
+      0 7px 0 #222, 
+      0 8px 0 #202020, 
+      0 9px 0 #1e1e1e, 
+      0 10px 0 #1c1c1c, 
+      0 11px 0 #1a1a1a, 
+      0 12px 0 #181818, 
+      0 13px 0 #161616, 
+      0 14px 0 #141414, 
+      0 15px 0 #121212, 
+      0 22px 30px rgba(0, 0, 0, 0.9);
+    
+      padding-top: 35px;
+    
+      animation: 1s ease-out 0s 1 slideInFromRight;
+    }
+    /* animation: 1s ease-out 0s 1 slideInFromRight;  */
+    @keyframes slideInFromRight {
+      0% {
+        transform: translateX(180%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+
+
+
+    /* This is the logo that is in the navbar */
+    .city_morgue_logo_navbar{
+      max-width: 38rem;
+      height: auto;
+      
+      padding-top: 1.5em;
+
+      /* Calls the slideInFromLeft animation for the logo*/
+      animation: 1s ease-out 0s 1 slideInFromLeft;
+    }
+
+    /* animation: 1s ease-out 0s 1 slideInFromLeft;  */
+    @keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-280%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+      /*animation: bounce 2s; */
+    @keyframes bounce {
+      0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+
+      40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+      }
+
+      80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+      }
+    }
+
+
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+  /*``````````````````````````````` MAIN CONTENT ``````````````````````````````` */
+
+
+
+  /* dDdDdDdDdDdDdDdDdDdD MAIN INFO dDdDdDdDdDdDdDdDdDdD*/
+
+    /* This is the main container that holds all the content below*/
+    .main_information_container{
+
+      /* Padding from the logo */
+      padding-top: 5rem; 
+
+      /* background-color: #131212; */
+
+      /* Padding under the last item in this div */
+      padding-bottom: 5rem; 
+
+      
+    }
+
+    /* The lines above and below all of the content*/
+    hr{
+      border: 5px solid #dcc590;
+
+      width: 90%;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* This is the div that holds the text*/
+    .informational_div_holder{
+      /* margin-top: 7rem; */
+
+      /* Space between each item */
+      margin-bottom: 5.5rem;
+
+   /* background-color: #131212; */
+      
+      color: #fff;
+
+
+      /* width: 50%; */
+    }
+
+    /* The header of the information Ex: What We Do | About Us */
+    .informational_header{
+      text-transform: uppercase;
+
+      font-size: 2.8rem;
+
+      /* Adds space between the hr  */
+      margin-top: 1.7rem;
+
+      /* Adds space under the header before the actual text */
+      margin-bottom: 1.5rem;
+
+
+    }
+
+    /* The actual Text under the header */
+    .informational_text{
+      font-size: 1.63em;
+
+      /* Adds the same amount of space under text above the hr MAKE THE SAME AS .informational_header*/
+      margin-bottom: 1.7rem;
+    }
+
+
+    /*ccccc CONTACT US ccccc */
+    /* This is under CONTACT US it is the direct call and email to Chris*/
+    .tel_and_mailto{
+      color: #fff;
+      text-decoration: none;
+
+      /* This is needed for the grow effect on the hover*/
+      transition: all .2s ease-in-out;
+    }
+    .tel_and_mailto:hover, .tel_and_mailto:focus{
+      color: #fff;
+      font-size: 1.2em;
+
+      transform: scale(1.5);
+    }
+
+    
+    .follow_us_text{
+      font-size: 1.8em;
+
+      /* Adds the same amount of space under text above the hr MAKE THE SAME AS .informational_header*/
+      margin-bottom: 1.7rem;
+    }
+
+
+    /* This is the facebook and instagram logos link*/
+    .social_media_icons_links{
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* This is the facebook and instagram logos*/
+    .social_media_icons{
+      font-size: 2.7em;
+      padding-right: 1.6em;
+      padding-left: 1.6em;
+
+      /* Adds the same amount of space under text above the hr MAKE THE SAME AS .informational_header*/
+      margin-bottom: 1rem;
+
+      /* This is needed for the grow effect on the hover*/
+      transition: all .2s ease-in-out;
+    }
+
+    .social_media_icons:hover, .social_media_icons:focus{
+      font-size: 2.5em;
+
+      color: #fff;
+
+      transform: scale(1.5);
+    }
+
+
+    /*ccccc CONTACT US ccccc */
+
+    @keyframes reveal { /*  */
+      from { opacity: 0; clip-path: inset(0% 80% 0% 80%); }
+      to { opacity: 1; clip-path: inset(0% 0% 0% 0%); }
+    }
+    .reveal-item {
+      animation: auto linear reveal both;
+      animation-timeline: view();
+      animation-range: entry 100% cover 50%;
+    }
+
+
+
+
+  /* dDdDdDdDdDdDdDdDdDdD DESCRIPTIONS dDdDdDdDdDdDdDdDdDdD*/
+
+
+
+
+
+
+
+  /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
+
+  /* This is the header above the logos */
+  .supplier_logos_header{
+    color: #fff;
+
+    font-size: 2.8rem;
+
+    text-transform: uppercase;
+  }
+
+/**/
+  .supplier_logos img{
+    max-width: max-content;
+    width: 430px;
+
+    height: auto;
+  }
+
+
+
+
+  @keyframes logo_reveal {
+    from { opacity: 0; clip-path: inset(50% 0% 50% 0%); }
+    to { opacity: 1; clip-path: inset(0% 0% 0% 0%); }
+  }
+  
+  .revealing-logo {
+    animation: auto linear logo_reveal both;
+    animation-timeline: view();
+    animation-range: entry 100% cover 45%;
+  }
+  /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+  /* This is the header above the image carousel */
+  .carousel_header{
+    color: #fff;
+
+    font-size: 2.8rem;
+
+    /* Space Above the "Bikes Out Of Our Shop" Text */
+    padding-top: 8rem; 
+
+    /* Space under the "Bikes Out Of Our Shop" Text */
+    padding-bottom: 5rem; 
+
+    text-transform: uppercase;
+  }
+
+
+  #imageSlider {
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    background-color: #131212;
+  }
+
+  #imageSlider {
+    height: 130vh; /* Set the height to 100% of the viewport height */
+  }
+
+  .carousel-inner {
+    height: 100%; /* Set the height of the carousel content to 100% */
+  }
+
+  .carousel-inner img {
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    height: 100%; /* Set the height of the images to 100% */
+  }
+
   /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 
-}
+
+
+
+  /*``````````````````````````````` MAIN CONTENT /*``````````````````````````````` */
+
+
+}/* 555555555555555555555555555555555555 FOR HUGE MONITORS / TV's 55555555555555555555555555555555555*/
+
 
 
 
