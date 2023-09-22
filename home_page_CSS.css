@@ -1882,6 +1882,7 @@ footer{
   }
 
 
+  /* The images in the carousel */
   .carousel-item{
     
   }
@@ -1911,6 +1912,82 @@ footer{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.what_we_do_icons{
+  background-color: #FFF;
+          /* This is needed for the grow effect on the hover*/
+          transition: all .2s ease-in-out;
+}
+
+.what_we_do_icons:hover{
+
+}
+
+
+
+
+
+
+
+.pic_container {
+  position: relative ;
+
+  margin-left: 100px;
+  margin-right: 100px;
+
+  margin-bottom: 20px;
+}
+
+.image {
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.pic_container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 
 
