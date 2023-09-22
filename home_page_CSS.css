@@ -362,13 +362,10 @@ footer{
     text-transform: uppercase;
   }
 
-/**/
-  .supplier_logos img{
-    max-width: 100%;
-    height: auto;
-
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+  /* This is for the logos to all be the same using the  img-thumbnail*/
+  .img-thumbnail{
+    background-color: transparent;
+    border: transparent;
   }
 
 
@@ -408,25 +405,6 @@ footer{
     text-transform: uppercase;
   }
 
-
-  #imageSlider {
-    height: 100vh; /* Set the height to 100% of the viewport height */
-    background-color: #131212;
-  }
-
-  #imageSlider {
-    height: 45vh; /* Set the height to 100% of the viewport height */
-  }
-
-  .carousel-inner {
-    height: 100%; /* Set the height of the carousel content to 100% */
-  }
-
-  .carousel-inner img {
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-    height: 100%; /* Set the height of the images to 100% */
-  }
-
   /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 
@@ -441,7 +419,6 @@ footer{
 
 
 }/* 11111111111111111111111111111 FOR CELLPHONES 1111111111111111111111111111*/
-
 
 
 
@@ -806,13 +783,10 @@ footer{
     text-transform: uppercase;
   }
 
-/**/
-  .supplier_logos img{
-    max-width: 100%;
-    height: auto;
-
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+  /* This is for the logos to all be the same using the  img-thumbnail*/
+  .img-thumbnail{
+    background-color: transparent;
+    border: transparent;
   }
 
 
@@ -852,24 +826,6 @@ footer{
     text-transform: uppercase;
   }
 
-
-  #imageSlider {
-    height: 100vh; /* Set the height to 100% of the viewport height */
-    background-color: #131212;
-  }
-
-  #imageSlider {
-    height: 52vh; /* Set the height to 100% of the viewport height */
-  }
-
-  .carousel-inner {
-    height: 100%; /* Set the height of the carousel content to 100% */
-  }
-
-  .carousel-inner img {
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-    height: 100%; /* Set the height of the images to 100% */
-  }
 
   /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
@@ -1215,14 +1171,10 @@ footer{
     text-transform: uppercase;
   }
 
-/**/
-  .supplier_logos img{
-    max-width: 100%;
-    width: 55vw;
-
-    height: auto;
-
-
+  /* This is for the logos to all be the same using the  img-thumbnail*/
+  .img-thumbnail{
+    background-color: transparent;
+    border: transparent;
   }
 
 
@@ -1261,24 +1213,6 @@ footer{
     text-transform: uppercase;
   }
 
-
-  #imageSlider {
-    height: 100vh; /* Set the height to 100% of the viewport height */
-    background-color: #131212;
-  }
-
-  #imageSlider {
-    height: 85vh; /* Set the height to 100% of the viewport height */
-  }
-
-  .carousel-inner {
-    height: 100%; /* Set the height of the carousel content to 100% */
-  }
-
-  .carousel-inner img {
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-    height: 100%; /* Set the height of the images to 100% */
-  }
 
   /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
@@ -1575,11 +1509,10 @@ footer{
     text-transform: uppercase;
   }
 
-/**/
-  .supplier_logos img{
-    max-width: 100%;
-
-    height: auto;
+  /* This is for the logos to all be the same using the  img-thumbnail*/
+  .img-thumbnail{
+    background-color: transparent;
+    border: transparent;
   }
 
 
@@ -1614,25 +1547,6 @@ footer{
     padding-bottom: 2rem; 
 
     text-transform: uppercase;
-  }
-
-
-  #imageSlider {
-    height: 100vh; /* Set the height to 100% of the viewport height */
-    background-color: #131212;
-  }
-
-  #imageSlider {
-    height: 95vh; /* Set the height to 100% of the viewport height */
-  }
-
-  .carousel-inner {
-    height: 100%; /* Set the height of the carousel content to 100% */
-  }
-
-  .carousel-inner img {
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-    height: 100%; /* Set the height of the images to 100% */
   }
 
   /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -1925,14 +1839,11 @@ footer{
     text-transform: uppercase;
   }
 
-/**/
-  .supplier_logos img{
-    max-width: max-content;
-    width: 400px;
-
-    height: auto;
+  /* This is for the logos to all be the same using the  img-thumbnail*/
+  .img-thumbnail{
+    background-color: transparent;
+    border: transparent;
   }
-
 
 
 
@@ -1971,22 +1882,8 @@ footer{
   }
 
 
-  #imageSlider {
-    height: 100vh; /* Set the height to 100% of the viewport height */
-    background-color: #131212;
-  }
-
-  #imageSlider {
-    height: 130vh; /* Set the height to 100% of the viewport height */
-  }
-
-  .carousel-inner {
-    height: 100%; /* Set the height of the carousel content to 100% */
-  }
-
-  .carousel-inner img {
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-    height: 100%; /* Set the height of the images to 100% */
+  .carousel-item{
+    
   }
 
   /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
