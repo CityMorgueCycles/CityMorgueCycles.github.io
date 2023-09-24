@@ -1,4 +1,25 @@
+
 /* COLORS:  #64c3a3 , #d6c279, #131212, #223242 */
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaa ANIMATIONS aaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+
+/* ~~~~ SPINNING ~~~~*/
+/* add this on items to counter spin almost making a ferris wheel type movement ==   animation: spin 50s infinite reverse linear; */
+.spin{
+  animation: spin 50s infinite linear;
+}
+
+@keyframes spin {
+  100% {
+      transform: rotate(1turn);
+  }
+}
+/* ~~~~ SPINNING ~~~~*/
+
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaa ANIMATIONS aaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+
+
 
 
 
@@ -239,6 +260,8 @@ footer{
     /* The header of the information Ex: What We Do | About Us */
     .informational_header{
       text-transform: uppercase;
+
+      color: #64c3a3;
 
       font-size: 1.7rem;
 
@@ -1934,8 +1957,7 @@ footer{
 
   margin-bottom: 2em;
 
-          /* This is needed for the grow effect on the hover*/
-          transition: all .2s ease-in-out;
+
 }
 
 .what_we_do_icons:hover{
@@ -1950,78 +1972,48 @@ footer{
 
 
 
-.pic_container {
-  position: relative ;
-
-  margin-left: 100px;
-  margin-right: 100px;
-
-  margin-bottom: 20px;
-}
-
-.image {
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-.pic_container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 18px;
-  position: absolute;
-
-  top: 50%;
-  left: 50%;
-
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-
-
-
-
-
-
 
 
    
 .card{
   color: black;
 
+
+
   /* CENTERS CARDS*/
   margin-left: auto;
   margin-right: auto;
 
-  width: 65%;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);  
+  width: 70%;
+
+
+
+
 }
 
 
+
+
+
+
+
+
 .what_we_do_card{
-  margin-top: 2em;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 /* Equal-height card images, cf. https://stackoverflow.com/a/47698201/1375163*/
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 376px) {
+
+  .what_we_do_card{
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+  }
+
   .card-img-top {
       height: 50vw;
       width: auto;
