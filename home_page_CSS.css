@@ -1111,7 +1111,7 @@ footer{
     }
 
     .social_media_icons:hover, .social_media_icons:focus{
-      font-size: 2.4em;
+      font-size: 2.5em;
 
       color: #fff;
 
@@ -1449,7 +1449,7 @@ footer{
     }
 
     .social_media_icons:hover, .social_media_icons:focus{
-      font-size: 2.4em;
+      font-size: 2.65em;
 
       color: #fff;
 
@@ -1732,7 +1732,7 @@ footer{
     .informational_header{
       text-transform: uppercase;
 
-      font-size: 2.8rem;
+      font-size: 3.5rem;
 
       /* Adds space between the hr  */
       margin-top: 1.7rem;
@@ -1745,7 +1745,7 @@ footer{
 
     /* The actual Text under the header */
     .informational_text{
-      font-size: 1.63em;
+      font-size: 1.7em;
 
       /* Adds the same amount of space under text above the hr MAKE THE SAME AS .informational_header*/
       margin-bottom: 1.7rem;
@@ -1770,7 +1770,7 @@ footer{
 
     
     .follow_us_text{
-      font-size: 1.8em;
+      font-size: 1.85em;
 
       /* Adds the same amount of space under text above the hr MAKE THE SAME AS .informational_header*/
       margin-bottom: 1.7rem;
@@ -1785,7 +1785,7 @@ footer{
 
     /* This is the facebook and instagram logos*/
     .social_media_icons{
-      font-size: 2.7em;
+      font-size: 5em;
       padding-right: 1.6em;
       padding-left: 1.6em;
 
@@ -1797,7 +1797,7 @@ footer{
     }
 
     .social_media_icons:hover, .social_media_icons:focus{
-      font-size: 2.5em;
+      font-size: 5em;
 
       color: #fff;
 
@@ -1834,7 +1834,7 @@ footer{
   .supplier_logos_header{
     color: #fff;
 
-    font-size: 2.8rem;
+    font-size: 3.5rem;
 
     text-transform: uppercase;
   }
@@ -1870,7 +1870,7 @@ footer{
   .carousel_header{
     color: #fff;
 
-    font-size: 2.8rem;
+    font-size: 3.5rem;
 
     /* Space Above the "Bikes Out Of Our Shop" Text */
     padding-top: 8rem; 
@@ -1931,6 +1931,9 @@ footer{
 
 .what_we_do_icons{
   background-color: #FFF;
+
+  margin-bottom: 2em;
+
           /* This is needed for the grow effect on the hover*/
           transition: all .2s ease-in-out;
 }
@@ -1938,6 +1941,8 @@ footer{
 .what_we_do_icons:hover{
 
 }
+
+
 
 
 
@@ -1988,6 +1993,59 @@ footer{
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+
+
+
+
+
+
+
+
+   
+.card{
+  color: black;
+
+  /* CENTERS CARDS*/
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 65%;
+}
+
+
+.what_we_do_card{
+  margin-top: 2em;
+}
+
+/* Equal-height card images, cf. https://stackoverflow.com/a/47698201/1375163*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 376px) {
+  .card-img-top {
+      height: 50vw;
+      width: auto;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .card-img-top {
+      height: 16vw;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card-img-top {
+      height: 11vw;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 992px) {
+  .card-img-top {
+      height: 20vw;
+  }
+}
+
 
 
 
