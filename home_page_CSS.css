@@ -276,7 +276,7 @@ footer{
 
     /* The actual Text under the header */
     .informational_text{
-      font-size: 1.3em;
+      font-size: 1.2em;
 
       /* Adds the same amount of space under text above the hr MAKE THE SAME AS .informational_header*/
       margin-bottom: 1.5rem;
