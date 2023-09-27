@@ -118,7 +118,7 @@ footer{
     
       padding-top: 30px;
     
-      animation: 1s ease-out 0s 1 slideInFromRight;
+      /* animation: 1s ease-out 0s 1 slideInFromLeft; */
     }
     /* animation: 1s ease-out 0s 1 slideInFromRight;  */
     @keyframes slideInFromRight {
@@ -227,7 +227,7 @@ footer{
       /* background-color: #131212; */
 
       /* Padding under the last item in this div */
-      padding-bottom: 4.5rem; 
+      /* padding-bottom: 1.5rem; */
 
       
     }
@@ -246,7 +246,7 @@ footer{
     .informational_div_holder{
       /* margin-top: 7rem; */
 
-      /* Space between each item */
+      /* Space between each Div */
       margin-bottom: 5rem;
 
    /* background-color: #131212; */
@@ -263,20 +263,20 @@ footer{
 
       color: #64c3a3;
 
-      font-size: 1.7rem;
+      font-size: 2rem;
 
       /* Adds space between the hr  */
       margin-top: 1.5rem;
 
       /* Adds space under the header before the actual text */
-      margin-bottom: 1.5rem;
+      margin-bottom: 3rem;
 
 
     }
 
     /* The actual Text under the header */
     .informational_text{
-      font-size: 1em;
+      font-size: 1.3em;
 
       /* Adds the same amount of space under text above the hr MAKE THE SAME AS .informational_header*/
       margin-bottom: 1.5rem;
@@ -294,16 +294,16 @@ footer{
     }
     .tel_and_mailto:hover, .tel_and_mailto:focus{
       color: #fff;
-      font-size: 1.2em;
+      font-size: 1.15em;
 
       transform: scale(1.5);
     }
 
     
     .follow_us_text{
-      font-size: 1.4em;
+      font-size: 1.5em;
 
-      /* Adds the same amount of space under text above the hr MAKE THE SAME AS .informational_header*/
+      /* Space under the "Follow us on Instagram and Facebook"*/
       margin-bottom: 1.5rem;
     }
 
@@ -376,14 +376,6 @@ footer{
 
   /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
 
-  /* This is the header above the logos */
-  .supplier_logos_header{
-    color: #fff;
-
-    font-size: 1.8rem;
-
-    text-transform: uppercase;
-  }
 
   /* This is for the logos to all be the same using the  img-thumbnail*/
   .img-thumbnail{
@@ -409,26 +401,6 @@ footer{
 
 
 
-
-
-
-  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-  /* This is the header above the image carousel */
-  .carousel_header{
-    color: #fff;
-
-    font-size: 1.8rem;
-
-    /* Space under the last arm logo */
-    padding-top: 4.5rem; 
-    /* Space under the "Bikes Out Of Our Shop" Text */
-    padding-bottom: 1.5rem; 
-
-    text-transform: uppercase;
-  }
-
-  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ IMAGE CAROUSEL @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 
 
@@ -544,7 +516,7 @@ footer{
     
       padding-top: 30px;
     
-      animation: 1s ease-out 0s 1 slideInFromRight;
+
     }
     /* animation: 1s ease-out 0s 1 slideInFromRight;  */
     @keyframes slideInFromRight {
@@ -929,7 +901,7 @@ footer{
     
       padding-top: 30px;
     
-      animation: 1s ease-out 0s 1 slideInFromRight;
+
     }
     /* animation: 1s ease-out 0s 1 slideInFromRight;  */
     @keyframes slideInFromRight {
@@ -1296,7 +1268,7 @@ footer{
     
       padding-top: 30px;
     
-      animation: 1s ease-out 0s 1 slideInFromRight;
+
     }
     /* animation: 1s ease-out 0s 1 slideInFromRight;  */
     @keyframes slideInFromRight {
@@ -1644,7 +1616,7 @@ footer{
     
       padding-top: 35px;
     
-      animation: 1s ease-out 0s 1 slideInFromRight;
+
     }
     /* animation: 1s ease-out 0s 1 slideInFromRight;  */
     @keyframes slideInFromRight {
@@ -1973,10 +1945,9 @@ footer{
 
 
 
-
    
 .card{
-  color: black;
+
 
 
 
@@ -1984,13 +1955,37 @@ footer{
   margin-left: auto;
   margin-right: auto;
 
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);  
+
+
+
+  background-color: transparent;
+  border: transparent;
+
+  
+  background: #65c3a4;
+
+  background: linear-gradient(90deg, #d4c47f 20%, #65c3a4 100%);
+  
+  background: -moz-linear-gradient(90deg, #d4c47f 20%, #65c3a4 100%);
+  
+  background: -webkit-linear-gradient(90deg, #d4c47f 20%, #65c3a4 100%);
+  
+
+
+
+
+
+
+
+  color: #FFF;
+
   width: 70%;
 
 
 
 
 }
+
 
 
 
