@@ -326,8 +326,9 @@ footer{
     }
     
     .jason_and_chris_pic{
-      max-width: 28rem;
+      max-width: 23.5rem;
       height: auto;
+      object-fit: cover;
     }
 
     
