@@ -25,6 +25,9 @@
 
 *{
   font-family: 'Rowdies', cursive;
+
+  /* Hides the horizontal scroll bar just incase */
+  overflow-x: hidden;  
 }
 
 
@@ -326,6 +329,7 @@ footer{
     }
     
     .jason_and_chris_pic{
+      /*asdasd asdasd asdsd asdasd FIX THIS ON PHONES THE SIZE OF THE PIC */
       max-width: 23.5rem;
       height: auto;
       object-fit: cover;
