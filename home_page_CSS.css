@@ -133,6 +133,10 @@ footer{
     }
 
 
+  /* This is the smaller "Est. 2011" Text under the Main Header*/
+  .establishedIn{
+    color: #d6c279;
+  }
 
 
     /* This is the logo that is in the navbar */
@@ -233,6 +237,8 @@ footer{
 
     }
 
+
+
     /* The lines above and below all of the content*/
     hr{
       border: 3.5px solid #dcc590;
@@ -243,7 +249,14 @@ footer{
 
       margin-left: auto;
       margin-right: auto;
+
+
+      /* Space above and under <hr>'s */
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
     }
+
+
 
     /* This is the div that holds the text*/
     .informational_div_holder{
@@ -251,6 +264,7 @@ footer{
 
     /* Space between each Main Section Div Item */
       margin-bottom: 10rem;
+
 
     /* background-color: #131212; */
       
@@ -303,6 +317,90 @@ footer{
     }
 
 
+
+    /*aaaaaa ABOUT US aaaaaa */
+
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .jason_and_chris_pic{
+      max-width: 28rem;
+      height: auto;
+    }
+
+    
+    .jason_name_button{
+      position: absolute;
+      top: 10%; 
+      left: 40%; 
+      transform: translate(-50%, -50%); 
+
+      color: #fff; 
+
+      /* 3D Text Shadow */
+      text-shadow: 
+      0 1px 0 #222222, 
+      0 2px 0 #242424, 
+      0 3px 0 #201f1f, 
+      0 4px 0 #1d1c1c, 
+      0 5px 0 #1a1a1a, 
+      0 6px 0 #000000;
+
+      background-color: transparent;
+      border: transparent;
+
+      font-size: 1.5em; 
+      text-align: center;
+
+
+      transition: .3s transform ;
+
+    }
+    .jason_name_button:hover{
+      color: #64c3a3;
+      transform: translate(-50%, -50%) scale(1.5); 
+    }
+
+
+    .chris_name_button{
+      position: absolute;
+      top: 10%; 
+      left: 69%; 
+      transform: translate(-50%, -50%); 
+
+      color: #fff; 
+
+      /* 3D Text Shadow */
+      text-shadow: 
+      0 1px 0 #222222, 
+      0 2px 0 #242424, 
+      0 3px 0 #201f1f, 
+      0 4px 0 #1d1c1c, 
+      0 5px 0 #1a1a1a, 
+      0 6px 0 #000000;
+
+      background-color: transparent;
+      border: transparent;
+
+      font-size: 1.5em; 
+      text-align: center;
+
+
+      transition: .3s transform ;
+
+    }
+    .chris_name_button:hover{
+      color: #64c3a3;
+      transform: translate(-50%, -50%) scale(1.5); 
+    }
+
+
+
+
+
+
     /*ccccc CONTACT US ccccc */
     /* This is under CONTACT US it is the direct call and email to Chris*/
     .tel_and_mailto{
@@ -337,6 +435,7 @@ footer{
     /* This is the facebook and instagram logos*/
     .social_media_icons{
       font-size: 2.2em;
+
       padding-right: 1.5em;
       padding-left: 1.5em;
 
@@ -443,32 +542,15 @@ footer{
 
 
 
-.what_we_do_icons{
-  background-color: #FFF;
-
-  margin-bottom: 2em;
-
-
-}
-
-.what_we_do_icons:hover{
-
-}
 
 
 
 
 
+/* [][][][][][][][][] SERVICES CARDS [][][][][][][][][]*/
 
-
-
-
-
-   
+/* This is the actual container for the  Services we offer cards */
 .card{
-
-
-
 
   /* CENTERS CARDS*/
   margin-left: auto;
@@ -491,7 +573,7 @@ footer{
   
 
 
-
+  padding: 10px;
 
 
 
@@ -503,6 +585,26 @@ footer{
 
 
 
+
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+.card:hover{
+  transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+
+
+/* The titles of each card */
+.card-title{
+  margin-top: 1rem;
+  margin-bottom: 1rem; 
+}
+
+
+/* This is the actual images to make them fit better */
+.card-img-top {
+  padding: 10px;
 }
 
 
@@ -510,23 +612,19 @@ footer{
 
 
 
-
-
-
-.what_we_do_card{
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
 
 /* Equal-height card images, cf. https://stackoverflow.com/a/47698201/1375163*/
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 376px) {
 
+
+  /* Space in between each of the cards*/
   .what_we_do_card{
     margin-top: .5rem;
     margin-bottom: 1.5rem;
   }
+
 
   .card-img-top {
       height: 50vw;
@@ -551,6 +649,7 @@ footer{
       height: 20vw;
   }
 }
+/* [][][][][][][][][] SERVICES CARDS [][][][][][][][][]*/
 
 
 
