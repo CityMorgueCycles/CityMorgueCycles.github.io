@@ -342,7 +342,7 @@ footer{
 
     
     .jason_and_chris_pic{
-      max-width: 28rem;
+      max-width: 25.5rem;
       height: auto;
       object-fit: cover;
     }
@@ -400,7 +400,7 @@ footer{
 
       /* LEFT AND RIGHT OF HEAD */
       top: 20%; 
-      left: 82%; 
+      left: 81%; 
 
       transform: translate(-50%, -50%); 
 
