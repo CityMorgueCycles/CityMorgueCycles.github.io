@@ -46,6 +46,10 @@ body {
 footer{
   background-color: #131212;
   color: #fff;
+
+  font-size: 0.8rem;
+
+  padding: 5px;
 }
 
 
@@ -336,13 +340,16 @@ footer{
     .image-container {
       position: relative;
       display: inline-block;
+
+      margin-left: auto;
+      margin-right: auto;
     }
 
 
 
     
     .jason_and_chris_pic{
-      max-width: 25rem;
+      max-width: 24rem;
       height: auto;
       object-fit: cover;
 
@@ -445,6 +452,11 @@ footer{
     .modal-header{
       background-color: #64c3a3;
       color: #000;
+    }
+
+    /* Actual text in the header */
+    .modal-title{
+      font-size: 1.6rem;
     }
 
     /* This is the button in the header */
