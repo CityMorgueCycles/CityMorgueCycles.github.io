@@ -27,7 +27,7 @@
   font-family: 'Rowdies', cursive;
 
   /* Hides the horizontal scroll bar just incase */
-  overflow-x: hidden;  
+
 }
 
 
@@ -36,7 +36,11 @@ body {
   background-image: radial-gradient( circle farthest-corner at 50.3% 44.5%,  #223242 30%, #131212 100.2% );
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
+
 }
+
+
+
 
 
 footer{
@@ -360,7 +364,7 @@ footer{
       text-align: center;
 
 
-      transition: .3s transform ;
+
 
     }
     .jason_name_button:hover{
@@ -561,42 +565,40 @@ footer{
   margin-left: auto;
   margin-right: auto;
 
+  color: #FFF;
 
+  width: 70%;
+
+  padding: 10px;
 
 
   background-color: transparent;
   border: transparent;
 
+
+  border-radius: 5%; 
+
   
   background: #65c3a4;
-
   background: linear-gradient(90deg, #d4c47f 20%, #65c3a4 100%);
-  
   background: -moz-linear-gradient(90deg, #d4c47f 20%, #65c3a4 100%);
-  
   background: -webkit-linear-gradient(90deg, #d4c47f 20%, #65c3a4 100%);
   
 
-
-  padding: 10px;
-
-
-
-
-  color: #FFF;
-
-  width: 70%;
-
-
-
-
-
-  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  transition: .3s transform ease-in-out;    
 }
 .card:hover{
-  transform: scale(1.05);
-box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  transform:  scale(1.05); 
+
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.944);
 }
+
+
+
+
+
+
 
 
 
@@ -655,6 +657,13 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
   }
 }
 /* [][][][][][][][][] SERVICES CARDS [][][][][][][][][]*/
+
+
+
+
+
+
+
 
 
 
