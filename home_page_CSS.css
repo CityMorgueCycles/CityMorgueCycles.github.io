@@ -320,12 +320,11 @@ body {
     }
 
 
-
     /*aaaaaa ABOUT US aaaaaa */
 
     /* Text that says "Click our names below to find out a little about us." */
     .click_our_names{
-      
+      font-size: 1rem;
     }
 
     /* Holds the chris and jason pic */
