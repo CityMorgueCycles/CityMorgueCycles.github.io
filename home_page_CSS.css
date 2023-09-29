@@ -24,10 +24,9 @@
 
 
 *{
-  font-family: 'Rowdies', cursive;
+  font-family: 'Black Ops One', cursive;
 
-  /* Hides the horizontal scroll bar just incase */
-
+  /* font-family: 'Rowdies', cursive; */
 }
 
 
@@ -102,6 +101,8 @@ body {
       text-transform: capitalize;
       font-size: 2em;
 
+      font-family: 'Creepster', cursive;
+
       /* 3D Text Shadow */
       text-shadow: 
       0 1px 0 #2e2e2e, 
@@ -139,6 +140,8 @@ body {
   /* This is the smaller "Est. 2011" Text under the Main Header*/
   .establishedIn{
     color: #d6c279;
+
+    font-family: 'Creepster', cursive;
   }
 
 
@@ -324,7 +327,7 @@ body {
 
     /* Text that says "Click our names below to find out a little about us." */
     .click_our_names{
-      font-size: 1rem;
+      font-size: 0.75rem;
     }
 
     /* Holds the chris and jason pic */
