@@ -39,7 +39,6 @@ body {
   background-image: radial-gradient( circle farthest-corner at 50.3% 44.5%,  #223242 30%, #131212 100.2% );
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
-
 }
 
 
@@ -450,7 +449,7 @@ body {
 
     /* Actual text in the header */
     .modal-title{
-      font-size: 1.6rem;
+      font-size: 1.35rem;
     }
 
     /* This is the button in the header */
@@ -654,7 +653,7 @@ body {
 
 
 
-/* [][][][][][][][][] SERVICES CARDS [][][][][][][][][]*/
+/* [][][][][][][][][][][][] SERVICES CARDS [][][][][][][][][][][][]*/
 
 /* This is the actual container for the  Services we offer cards */
 .card{
@@ -665,7 +664,7 @@ body {
 
   color: #FFF;
 
-  width: 70%;
+  width: 80%;
 
   padding: 10px;
 
@@ -674,13 +673,11 @@ body {
   border: transparent;
 
 
-  border-radius: 3%; 
+  border-radius: 2.5em;
 
   
   background: #65c3a4;
-  background: linear-gradient(90deg, #d4c47f 20%, #65c3a4 100%);
-  background: -moz-linear-gradient(90deg, #d4c47f 20%, #65c3a4 100%);
-  background: -webkit-linear-gradient(90deg, #d4c47f 20%, #65c3a4 100%);
+  background: -webkit-linear-gradient(90deg, #d4c47f 25%, #65c3a4 100%);
   
 
   transition: .3s transform ease-in-out;    
@@ -704,6 +701,8 @@ body {
 .card-title{
   margin-top: 1rem;
   margin-bottom: 1rem; 
+
+  font-size: 1.8rem;
 }
 
 
@@ -712,9 +711,10 @@ body {
   padding: 10px;
 }
 
-
-
-
+/* This is the description of the card */
+.card-text{
+  font-size: 1.1rem;
+}
 
 
 
@@ -762,7 +762,7 @@ body {
 
 
 
-
+/*fffffffffffffffffff FOOTER  fffffffffffffffffff*/
 footer{
   background-color: #131212;
   color: #fff;
@@ -787,6 +787,48 @@ footer{
 .jump_to_top_text:hover{
   transform: scale(1.05); 
 }
+/*fffffffffffffffffff FOOTER  fffffffffffffffffff*/
 
 
+
+
+
+
+
+
+
+
+
+
+.testimonials .card {
+  /*65c3a4   d4c47f*/
+  background-image: radial-gradient( circle farthest-corner at 50.3% 44.5%,  #d4c47f 30%, #d4c47f 100.2% );
+  border-bottom: 7px #65c3a4 solid !important;
+  border-top: 10px #65c3a4 solid !important;
+  transition: 0.5s;
+  margin-top: 60px;
+
+}
+
+/* This is the text inside the card */
+.testimonials .card-text{
+
+}
+
+
+/* This is the circle with the " */
+.testimonials .card i {
+  background-color: #65c3a4;
+  color: #ffffff;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  margin: -40px auto 0 auto;
+}
+
+/* The footer that holds the reviewers name */
+.testimonials footer{
+  background-color: #65c3a4;
+  color: #585858;
+}
 
