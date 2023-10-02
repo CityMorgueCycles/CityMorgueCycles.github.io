@@ -681,6 +681,8 @@ body {
   
 
   transition: .3s transform ease-in-out;    
+
+
 }
 .card:hover{
   transform:  scale(1.05); 
@@ -691,9 +693,13 @@ body {
 
 
 
-
-
-
+/* This is the space between cards using the spacers added */
+.services_hidden_span_spacer::before {
+  content: " ";
+  display: block;
+  visibility: hidden;
+  height: 30px; /* Adjust the height to control the spacing between cards */
+}
 
 
 
@@ -723,13 +729,8 @@ body {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 376px) {
 
-
   /* Space in between each of the cards*/
-  .what_we_do_card{
-    margin-top: .5rem;
-    margin-bottom: 1.5rem;
-  }
-
+  /* This is a hidden span spacer that was added to be put in the cards to add proper spacing between each card */
 
   .card-img-top {
       height: 50vw;
@@ -806,9 +807,21 @@ footer{
   border-bottom: 7px #65c3a4 solid !important;
   border-top: 10px #65c3a4 solid !important;
   transition: 0.5s;
-  margin-top: 60px;
 
+  /* margin-top: 30px;
+  margin-bottom: 30px; */
+  
 }
+
+
+/* This is the space between cards using the spacers added */
+.testimonials_hidden_span_spacer::before {
+  content: " ";
+  display: block;
+  visibility: hidden;
+  height: 50px; /* Adjust the height to control the spacing between cards */
+}
+
 
 /* This is the text inside the card */
 .testimonials .card-text{
