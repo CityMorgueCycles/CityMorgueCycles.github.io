@@ -1,0 +1,847 @@
+
+/* COLORS:  #64c3a3 , #d6c279, #131212, #223242 */
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaa ANIMATIONS aaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+
+/* ~~~~ SPINNING ~~~~*/
+/* add this on items to counter spin almost making a ferris wheel type movement ==   animation: spin 50s infinite reverse linear; */
+.spin{
+  animation: spin 50s infinite linear;
+}
+
+@keyframes spin {
+  100% {
+      transform: rotate(1turn);
+  }
+}
+/* ~~~~ SPINNING ~~~~*/
+
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaa ANIMATIONS aaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+
+
+
+
+
+*{
+  font-family: 'Black Ops One', cursive;
+
+  /* font-family: 'Rowdies', cursive; */
+}
+
+
+html {
+  scroll-behavior:smooth;
+}
+
+
+body {
+  /* background-image: radial-gradient( circle farthest-corner at 50.3% 44.5%,  #223242 30%, #131212 100.2% ); */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+
+
+
+
+
+
+
+/* 11111111111111111111111111111 FOR CELLPHONES 1111111111111111111111111111*/
+@media screen and (min-width: 1200px) {
+
+  
+  body {
+    background-color: pink;
+  }
+  
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+      /* ............ H1 TYPEWRITER  ............*/
+    /* This is the typing text saying "Welcome to City Morgue Cycles */
+    .typewriter h1 {
+      color: white;
+      text-transform: capitalize;
+      font-size: 1.3em;
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      border-right: .3em solid #0000; /* The typewriter cursor */
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      padding-top: 25px;
+      letter-spacing: .10em; /* Adjust as needed */
+      animation: 
+        typing 3.2s steps(80, end),
+        blink-caret .75s step-end infinite;
+    }
+    /* The typing effect */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #0000; }
+    }
+      /* ............ H1 TYPEWRITER  ............*/
+
+
+
+
+    /* This is the h1 text saying "Welcome to City Morgue Cycles"*/
+    .welcome_text{
+      color: #fff;
+      text-transform: capitalize;
+      font-size: 2em;
+
+      font-family: 'Creepster', cursive;
+
+      /* 3D Text Shadow */
+      text-shadow: 
+      0 1px 0 #2e2e2e, 
+      0 2px 0 #2c2c2c, 
+      0 3px 0 #2a2a2a, 
+      0 4px 0 #282828, 
+      0 5px 0 #262626, 
+      0 6px 0 #242424, 
+      0 7px 0 #222, 
+      0 8px 0 #202020, 
+      0 9px 0 #1e1e1e, 
+      0 10px 0 #1c1c1c, 
+      0 11px 0 #1a1a1a, 
+      0 12px 0 #181818, 
+      0 13px 0 #161616, 
+      0 14px 0 #141414, 
+      0 15px 0 #121212, 
+      0 22px 30px rgba(0, 0, 0, 0.9);
+    
+      padding-top: 30px;
+    
+      /* animation: 1s ease-out 0s 1 slideInFromLeft; */
+    }
+    /* animation: 1s ease-out 0s 1 slideInFromRight;  */
+    @keyframes slideInFromRight {
+      0% {
+        transform: translateX(180%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+
+  /* This is the smaller "Est. 2011" Text under the Main Header*/
+  .establishedIn{
+    color: #d6c279;
+
+    font-family: 'Creepster', cursive;
+  }
+
+
+    /* This is the logo that is in the navbar */
+    .city_morgue_logo_navbar{
+      max-width: 25rem;
+      height: auto;
+      
+      padding-top: 1em;
+
+      /* Calls the slideInFromLeft animation for the logo*/
+      animation: 1s ease-out 0s 1 slideInFromLeft;
+    }
+
+    /* animation: 1s ease-out 0s 1 slideInFromLeft;  */
+    @keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-180%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+      /*animation: bounce 2s; */
+    @keyframes bounce {
+      0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+
+      40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+      }
+
+      80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+      }
+    }
+
+
+
+
+
+
+
+
+  /* THESE ARE FOR THE PHONE BUTTON TOGGLER*/
+    .navbar-toggler{
+      background-color: aqua;
+    }
+    .navbar_phone_toggler_icon{
+      background-color: antiquewhite;
+      color: brown;
+    }
+
+
+    /* This is the color of the links in the navbar */
+    .nav-link{
+      color: white;
+      font-size: 1.5em;
+    }
+
+    .nav-link:hover, .nav-link:focus{
+      color: rgb(255, 0, 0);
+      font-size: 2em;
+    }
+
+    /* This is the nav link that the user is currently on */
+    .active_link{
+      color: blue;
+      text-decoration: underline;
+    }
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+  /*``````````````````````````````` MAIN CONTENT ``````````````````````````````` */
+
+
+
+  /* dDdDdDdDdDdDdDdDdDdD MAIN INFO dDdDdDdDdDdDdDdDdDdD*/
+
+    /* This is the main container that holds all the content below*/
+    .main_information_container{
+
+      /* Padding from the logo */
+      padding-top: 5rem; 
+
+      /* background-color: #131212; */
+
+      /* Padding under the last item in this div */
+      /* padding-bottom: 1.5rem; */
+
+    }
+
+
+
+    /* The lines above and below all of the content*/
+    hr{
+      border: 3.5px solid #dcc590;
+
+      width: 95%;
+
+      opacity: 100%;
+
+      margin-left: auto;
+      margin-right: auto;
+
+
+      /* Space above and under <hr>'s */
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+
+
+    /* This is the div that holds the text*/
+    .informational_div_holder{
+      /* margin-top: 7rem; */
+
+    /* Space between each Main Section Div Item */
+      margin-bottom: 10rem;
+
+
+    /* background-color: #131212; */
+      
+      color: #fff;
+
+      /* width: 50%; */
+    }
+
+    /* The header of the information Ex: What We Do | About Us */
+    .informational_header{
+      text-transform: uppercase;
+
+      color: #64c3a3;
+
+      font-size: 2rem;
+
+      /* Adds space between the hr  */
+      margin-top: 1.5rem;
+
+      /* Adds space under the header before the actual text */
+      margin-bottom: 3rem;
+
+            /* 3D Text Shadow */
+            text-shadow: 
+            0 1px 0 #2e2e2e, 
+            0 2px 0 #2c2c2c, 
+            0 3px 0 #2a2a2a, 
+            0 4px 0 #282828, 
+            0 5px 0 #262626, 
+            0 6px 0 #242424, 
+            0 7px 0 #222,
+            0 8px 0 #202020, 
+            0 9px 0 #1e1e1e, 
+            0 10px 0 #1c1c1c, 
+            0 11px 0 #1a1a1a, 
+            0 12px 0 #181818, 
+            0 13px 0 #161616, 
+            0 14px 0 #141414, 
+            0 15px 0 #121212, 
+            0 22px 30px #000000e6;
+
+    }
+
+    /* The actual Text under the header */
+    .informational_text{
+      font-size: 1.2em;
+
+      /* Adds the same amount of space under text above the hr MAKE THE SAME AS .informational_header*/
+      margin-bottom: 1.5rem;
+    }
+
+
+    /*aaaaaa ABOUT US aaaaaa */
+
+    /* Text that says "Click our names below to find out a little about us." */
+    .click_our_names{
+      font-size: 0.75rem;
+    }
+
+    /* Holds the chris and jason pic */
+    .image-container {
+      position: relative;
+      display: inline-block;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+
+    
+    .jason_and_chris_pic{
+      max-width: 24rem;
+      height: auto;
+      object-fit: cover;
+
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    
+    .jason_name_button{
+      position: absolute;
+
+      /* TOP AND CENTER OF HEAD
+      top: 10%; 
+      left: 40%; 
+      */
+
+      /* LEFT AND RIGHT OF HEAD */
+      top: 20%; 
+      left: 20%; 
+
+      transform: translate(-50%, -50%); 
+
+      color: #ffed9a; 
+
+      /* 3D Text Shadow */
+      text-shadow: 
+      0 1px 0 #222222, 
+      0 2px 0 #242424, 
+      0 3px 0 #201f1f, 
+      0 4px 0 #1d1c1c, 
+      0 5px 0 #1a1a1a, 
+      0 6px 0 #000000;
+
+      /* Due to them being buttons */
+      background-color: transparent;
+      border: transparent;
+
+      font-size: 1.8em; 
+      text-align: center;
+
+
+
+      transition: .3s transform ease-in-out;
+
+    }
+    .jason_name_button:hover{
+      transform: translate(-50%, -50%) scale(1.3); 
+    }
+
+
+    .chris_name_button{
+      position: absolute;
+
+      /* TOP AND CENTER OF HEAD
+      top: 10%; 
+      left: 69%; 
+      */
+
+      /* LEFT AND RIGHT OF HEAD */
+      top: 20%; 
+      left: 81%; 
+
+      transform: translate(-50%, -50%); 
+
+      color: #ffed9a; 
+
+      /* 3D Text Shadow */
+      text-shadow: 
+      0 1px 0 #222222, 
+      0 2px 0 #242424, 
+      0 3px 0 #201f1f, 
+      0 4px 0 #1d1c1c, 
+      0 5px 0 #1a1a1a, 
+      0 6px 0 #000000;
+
+      /* Due to them being buttons */
+      background-color: transparent;
+      border: transparent;
+
+      font-size: 1.8em; 
+      text-align: center;
+
+
+      transition: .3s transform ease-in-out;
+
+    }
+    .chris_name_button:hover{
+      transform: translate(-50%, -50%) scale(1.3); 
+    }
+
+
+
+
+
+
+    /*mmmmmmmmmmmmmmmmmm JASON AND CHRIS"S MODALS mmmmmmmmmmmmmmmmmm*/
+
+    /* This is the headers container */
+    .modal-header{
+      background-color: #64c3a3;
+      color: #000;
+    }
+
+    /* Actual text in the header */
+    .modal-title{
+      font-size: 1.35rem;
+    }
+
+    /* This is the button in the header */
+    .btn-close{
+      background-color: #d4c47f;
+      transition: .3s transform ease-in-out;
+    }
+    .btn-close:hover{
+      transform: scale(1.2); 
+    }
+
+
+
+    /* Everything in the main content under the header */
+    .modal-body{
+      font-size: 1.3rem;
+
+      color: #000;
+    }
+
+
+
+
+
+
+    /* This is the bottom button that says Close */
+    .close_button{
+      background-color: #d4c47f;
+
+      padding-bottom: 5px;
+
+      border-radius: 5px;
+      border-width: 0;
+      box-shadow: #2d234266 0 2px 4px,#2d23424d 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+      box-sizing: border-box;
+
+      transform: scale(1.3); 
+
+      transition: box-shadow .15s,transform .15s ease-in-out;
+    }
+    .close_button:hover{
+      background-color: #64c3a3;
+      box-shadow: #2d234266 0 4px 8px, #2d23424d 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+      transform: scale(1.5);
+    }
+
+
+    /*mmmmmmmmmmmmmmmmmm JASON AND CHRIS"S MODALS mmmmmmmmmmmmmmmmmm*/
+
+
+
+    /*ccccc CONTACT US ccccc */
+    /* This is under CONTACT US it is the direct call and email to Chris*/
+    .tel_and_mailto{
+      color: #fff;
+      text-decoration: none;
+
+      /* This is needed for the grow effect on the hover*/
+      transition: all .2s ease-in-out;
+    }
+    .tel_and_mailto:hover, .tel_and_mailto:focus{
+      color: #fff;
+      font-size: 1.15em;
+
+      transform: scale(1.5);
+    }
+
+    
+    .follow_us_text{
+      font-size: 1.5em;
+
+      /* Space under the "Follow us on Instagram and Facebook"*/
+      margin-bottom: 1.5rem;
+    }
+
+
+    /* This is the facebook and instagram logos link*/
+    .social_media_icons_links{
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* This is the facebook and instagram logos*/
+    .social_media_icons{
+      font-size: 2.2em;
+
+      padding-right: 1.5em;
+      padding-left: 1.5em;
+
+      /* This is needed for the grow effect on the hover*/
+      transition: all .2s ease-in-out;
+    }
+
+    .social_media_icons:hover, .social_media_icons:focus{
+      font-size: 2.2em;
+
+      color: #fff;
+
+      transform: scale(1.5);
+    }
+
+
+    /*ccccc CONTACT US ccccc */
+
+    @keyframes reveal { /*  */
+      from { opacity: 0; clip-path: inset(0% 100% 0% 100%); }
+      to { opacity: 1; clip-path: inset(0% 0% 0% 0%); }
+    }
+    .reveal-item {
+      animation: auto linear reveal both;
+      animation-timeline: view();
+      animation-range: entry 100% cover 50%;
+    }
+
+  /* This will make the object its given to (list-view), to disappear upwards when screen scrolls down */
+  /*
+  @keyframes animate-in {
+    0% { opacity: 0; transform: translateY(100%); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes animate-out {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-100%); }
+  }
+  
+  .list-view{
+    animation: animate-in linear forwards,
+               animate-out linear forwards;
+    animation-timeline: view();
+    animation-range: entry, exit;
+  }
+  */
+
+
+
+  /* dDdDdDdDdDdDdDdDdDdD DESCRIPTIONS dDdDdDdDdDdDdDdDdDdD*/
+
+
+
+
+
+
+
+  /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
+
+
+  /* This is for the logos to all be the same using the  img-thumbnail*/
+  .img-thumbnail{
+    background-color: transparent;
+    border: transparent;
+
+    transition: .3s transform ease-in-out;
+  }
+
+  .img-thumbnail:hover{
+    transform:  scale(1.04); 
+  }
+
+
+
+
+
+  @keyframes logo_reveal {
+    from { opacity: 0; clip-path: inset(50% 0% 50% 0%); }
+    to { opacity: 1; clip-path: inset(0% 0% 0% 0%); }
+  }
+  
+  .revealing-logo {
+    animation: auto linear logo_reveal both;
+    animation-timeline: view();
+    animation-range: entry 100% cover 50%;
+  }
+  /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+
+
+
+
+  /*``````````````````````````````` MAIN CONTENT /*``````````````````````````````` */
+
+
+
+
+
+
+}/* 11111111111111111111111111111 FOR CELLPHONES 1111111111111111111111111111*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* [][][][][][][][][][][][] SERVICES CARDS [][][][][][][][][][][][]*/
+
+/* This is the actual container for the  Services we offer cards */
+.card{
+
+  /* CENTERS CARDS*/
+  margin-left: auto;
+  margin-right: auto;
+
+  color: #FFF;
+
+  width: 80%;
+
+  padding: 10px;
+
+
+  background-color: transparent;
+  border: transparent;
+
+
+  border-radius: 2.5em;
+
+  
+  background: #65c3a4;
+  background: -webkit-linear-gradient(90deg, #d4c47f 25%, #65c3a4 100%);
+  
+
+  transition: .3s transform ease-in-out;    
+
+
+}
+.card:hover{
+  transform:  scale(1.05); 
+
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.944);
+}
+
+
+
+/* This is the space between cards using the spacers added */
+.services_hidden_span_spacer::before {
+  content: " ";
+  display: block;
+  visibility: hidden;
+  height: 30px; /* Adjust the height to control the spacing between cards */
+}
+
+
+
+/* The titles of each card */
+.card-title{
+  margin-top: 1rem;
+  margin-bottom: 1rem; 
+
+  font-size: 1.8rem;
+}
+
+
+/* This is the actual images to make them fit better */
+.card-img-top {
+  padding: 10px;
+}
+
+/* This is the description of the card */
+.card-text{
+  font-size: 1.1rem;
+}
+
+
+
+/* Equal-height card images, cf. https://stackoverflow.com/a/47698201/1375163*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 376px) {
+
+  /* Space in between each of the cards*/
+  /* This is a hidden span spacer that was added to be put in the cards to add proper spacing between each card */
+
+  .card-img-top {
+      height: 50vw;
+      width: auto;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .card-img-top {
+      height: 16vw;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card-img-top {
+      height: 11vw;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 992px) {
+  .card-img-top {
+      height: 20vw;
+  }
+}
+/* [][][][][][][][][] SERVICES CARDS [][][][][][][][][]*/
+
+
+
+
+
+
+
+/*fffffffffffffffffff FOOTER  fffffffffffffffffff*/
+footer{
+  background-color: #131212;
+  color: #fff;
+
+  font-size: 0.7rem;
+
+  padding: 15px;
+} 
+
+/* The link to the jump to top text */
+.jump_to_top_link{
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Actual Text of Back to top*/
+.jump_to_top_text{
+  color: #fff;
+  transition: .3s transform ease-in-out;
+}
+
+.jump_to_top_text:hover{
+  transform: scale(1.05); 
+}
+/*fffffffffffffffffff FOOTER  fffffffffffffffffff*/
+
+
+
+
+
+
+
+
+
+
+
+
+.testimonials .card {
+  /*65c3a4   d4c47f*/
+  background-image: radial-gradient( circle farthest-corner at 50.3% 44.5%,  #d4c47f 30%, #d4c47f 100.2% );
+  border-bottom: 7px #65c3a4 solid !important;
+  border-top: 10px #65c3a4 solid !important;
+  transition: 0.5s;
+
+  /* margin-top: 30px;
+  margin-bottom: 30px; */
+  
+}
+
+
+/* This is the space between cards using the spacers added */
+.testimonials_hidden_span_spacer::before {
+  content: " ";
+  display: block;
+  visibility: hidden;
+  height: 50px; /* Adjust the height to control the spacing between cards */
+}
+
+
+/* This is the text inside the card */
+.testimonials .card-text{
+
+}
+
+
+/* This is the circle with the " */
+.testimonials .card i {
+  background-color: #65c3a4;
+  color: #ffffff;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  margin: -40px auto 0 auto;
+}
+
+/* The footer that holds the reviewers name */
+.testimonials footer{
+  background-color: #65c3a4;
+  color: #585858;
+}
+
