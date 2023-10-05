@@ -98,7 +98,7 @@ body {
     .welcome_text{
       color: #fff;
       text-transform: capitalize;
-      font-size: 3em;
+      font-size: 4em;
 
       font-family: 'Creepster', cursive;
 
@@ -140,7 +140,7 @@ body {
   .establishedIn{
     color: #d6c279;
 
-    font-size: 1.25rem;
+    font-size: 1.3rem;
 
     font-family: 'Creepster', cursive;
   }
@@ -148,7 +148,7 @@ body {
 
     /* This is the logo that is in the navbar */
     .city_morgue_logo_navbar{
-      max-width: 32rem;
+      max-width: 35rem;
       height: auto;
       
       padding-top: 1em;
