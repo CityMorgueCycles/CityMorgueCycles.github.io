@@ -143,6 +143,9 @@ body {
     font-size: 1.3rem;
 
     font-family: 'Creepster', cursive;
+
+          /* Calls the slideInFromLeft animation for the logo*/
+          animation: 1s ease-out 0s 1 slideInFromLeft;
   }
 
 
@@ -286,7 +289,7 @@ body {
 
       color: #64c3a3;
 
-      font-size: 2.5rem;
+      font-size: 2.9rem;
 
       /* Adds space between the hr  */
       margin-top: 1.5rem;
