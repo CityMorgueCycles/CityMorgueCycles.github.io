@@ -143,6 +143,10 @@ body {
     font-size: 1.3rem;
 
     font-family: 'Creepster', cursive;
+
+
+          /* Calls the slideInFromLeft animation for the logo*/
+          animation: 1s ease-out 0s 1 slideInFromLeft;
   }
 
 
