@@ -544,7 +544,6 @@ body {
     }
 
     .social_media_icons:hover, .social_media_icons:focus{
-      font-size: 2.2em;
 
       color: #fff;
 
@@ -591,54 +590,6 @@ body {
 
 
 
-
-
-  /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
-
-
-  /* This is for the logos to all be the same using the  img-thumbnail*/
-  .img-thumbnail{
-    background-color: transparent;
-    border: transparent;
-
-    transition: .3s transform ease-in-out;
-  }
-
-  .img-thumbnail:hover{
-    transform:  scale(1.04); 
-  }
-
-
-
-
-
-  @keyframes logo_reveal {
-    from { opacity: 0; clip-path: inset(50% 0% 50% 0%); }
-    to { opacity: 1; clip-path: inset(0% 0% 0% 0%); }
-  }
-  
-  .revealing-logo {
-    animation: auto linear logo_reveal both;
-    animation-timeline: view();
-    animation-range: entry 100% cover 50%;
-  }
-  /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
-
-
-
-
-
-
-
-
-  /*``````````````````````````````` MAIN CONTENT /*``````````````````````````````` */
-
-
-
-
-
-
-}/* 11111111111111111111111111111 FOR CELLPHONES 1111111111111111111111111111*/
 
 
 
@@ -715,6 +666,9 @@ body {
 /* This is the actual images to make them fit better */
 .card-img-top {
   padding: 10px;
+
+  height: 50vw;
+  width: auto;
 }
 
 /* This is the description of the card */
@@ -726,35 +680,7 @@ body {
 
 /* Equal-height card images, cf. https://stackoverflow.com/a/47698201/1375163*/
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 376px) {
 
-  /* Space in between each of the cards*/
-  /* This is a hidden span spacer that was added to be put in the cards to add proper spacing between each card */
-
-  .card-img-top {
-      height: 50vw;
-      width: auto;
-  }
-}
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .card-img-top {
-      height: 16vw;
-  }
-}
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .card-img-top {
-      height: 11vw;
-  }
-}
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 992px) {
-  .card-img-top {
-      height: 20vw;
-  }
-}
 /* [][][][][][][][][] SERVICES CARDS [][][][][][][][][]*/
 
 
@@ -763,44 +689,11 @@ body {
 
 
 
-/*fffffffffffffffffff FOOTER  fffffffffffffffffff*/
-footer{
-  background-color: #131212;
-  color: #fff;
-
-  font-size: 0.7rem;
-
-  padding: 15px;
-} 
-
-/* The link to the jump to top text */
-.jump_to_top_link{
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Actual Text of Back to top*/
-.jump_to_top_text{
-  color: #fff;
-  transition: .3s transform ease-in-out;
-}
-
-.jump_to_top_text:hover{
-  transform: scale(1.05); 
-}
-/*fffffffffffffffffff FOOTER  fffffffffffffffffff*/
 
 
 
 
-
-
-
-
-
-
-
-
+/* rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr USER REVIEW CARDS rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
 .testimonials .card {
   /*65c3a4   d4c47f*/
   background-image: radial-gradient( circle farthest-corner at 50.3% 44.5%,  #d4c47f 30%, #d4c47f 100.2% );
@@ -844,4 +737,87 @@ footer{
   background-color: #65c3a4;
   color: #585858;
 }
+/* rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr USER REVIEW CARDS rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
 
+
+
+
+
+
+
+
+
+  /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
+
+
+  /* This is for the logos to all be the same using the  img-thumbnail*/
+  .img-thumbnail{
+    background-color: transparent;
+    border: transparent;
+
+    transition: .3s transform ease-in-out;
+  }
+
+  .img-thumbnail:hover{
+    transform:  scale(1.04); 
+  }
+
+
+
+
+
+  @keyframes logo_reveal {
+    from { opacity: 0; clip-path: inset(50% 0% 50% 0%); }
+    to { opacity: 1; clip-path: inset(0% 0% 0% 0%); }
+  }
+  
+  .revealing-logo {
+    animation: auto linear logo_reveal both;
+    animation-timeline: view();
+    animation-range: entry 100% cover 50%;
+  }
+  /* !!!!!!!!!!!!!!!!! SUPPLIER LOGOS !!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+
+
+
+  /*``````````````````````````````` MAIN CONTENT /*``````````````````````````````` */
+
+
+
+
+
+
+
+
+/*fffffffffffffffffff FOOTER  fffffffffffffffffff*/
+footer{
+  background-color: #131212;
+  color: #fff;
+
+  font-size: 0.7rem;
+
+  padding: 15px;
+} 
+
+/* The link to the jump to top text */
+.jump_to_top_link{
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Actual Text of Back to top*/
+.jump_to_top_text{
+  color: #fff;
+  transition: .3s transform ease-in-out;
+}
+
+.jump_to_top_text:hover{
+  transform: scale(1.05); 
+}
+/*fffffffffffffffffff FOOTER  fffffffffffffffffff*/
+
+}/* 11111111111111111111111111111 FOR CELLPHONES 1111111111111111111111111111*/
