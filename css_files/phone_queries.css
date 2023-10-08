@@ -658,7 +658,7 @@ body {
   content: " ";
   display: block;
   visibility: hidden;
-  height: 30px; /* Adjust the height to control the spacing between cards */
+  height: 50px; /* Adjust the height to control the spacing between cards */
 }
 
 
@@ -812,6 +812,9 @@ footer{
   color: #fff;
 
   font-size: 0.7rem;
+
+    /* THIS MAKES IT TO WHERE WHEN THE "Back to Top" text IS HOVERED IT WONT TRY TO MAKE YOU SCROLL HORIZONTALLY */
+    overflow-x: hidden; 
 
   padding: 15px;
 } 

@@ -98,7 +98,7 @@ body {
     .welcome_text{
       color: #fff;
       text-transform: capitalize;
-      font-size: 4.5em;
+      font-size: 7em;
 
       font-family: 'Creepster', cursive;
 
@@ -140,7 +140,7 @@ body {
   .establishedIn{
     color: #d6c279;
 
-    font-size: 1.3rem;
+    font-size: 2rem;
 
     font-family: 'Creepster', cursive;
 
@@ -149,10 +149,10 @@ body {
 
     /* This is the logo that is in the navbar */
     .city_morgue_logo_navbar{
-      max-width: 40rem;
-      height: auto;
+      max-width: 60rem;
+      height: 37rem;
       
-      padding-top: 1em;
+      padding-top: 4em;
 
       /* Calls the slideInFromLeft animation for the logo*/
       animation: 1s ease-out 0s 1 slideInFromLeft;
@@ -236,7 +236,7 @@ body {
     .main_information_container{
 
       /* Padding from the logo */
-      padding-top: 5rem; 
+      padding-top: 7rem; 
 
       /* background-color: #131212; */
 
@@ -271,7 +271,7 @@ body {
       /* margin-top: 7rem; */
 
     /* Space between each Main Section Div Item */
-      margin-bottom: 10rem;
+      margin-bottom: 20rem;
 
 
     /* background-color: #131212; */
@@ -287,13 +287,13 @@ body {
 
       color: #64c3a3;
 
-      font-size: 3.2rem;
+      font-size: 4rem;
 
       /* Adds space between the hr  */
-      margin-top: 1.5rem;
+      margin-top: 3rem;
 
       /* Adds space under the header before the actual text */
-      margin-bottom: 3rem;
+      margin-bottom: 5rem;
 
             /* 3D Text Shadow */
             text-shadow: 
@@ -318,7 +318,7 @@ body {
 
     /* The actual Text under the header */
     .informational_text{
-      font-size: 1.4em;
+      font-size: 1.7em;
 
       /* THIS ENSURES THE TEXT STAYS IN BOUND WITH THE <hr> */
       padding-left: 2rem;
@@ -333,7 +333,8 @@ body {
 
     /* Text that says "Click our names below to find out a little about us." */
     .click_our_names{
-      font-size: 0.9rem;
+      padding-top: 2rem;
+      font-size: 1.1rem;
     }
 
     /* Holds the chris and jason pic */
@@ -349,7 +350,7 @@ body {
 
     
     .jason_and_chris_pic{
-      max-width: 38rem;
+      max-width: 65rem;
       height: auto;
       object-fit: cover;
 
@@ -388,7 +389,7 @@ body {
       background-color: transparent;
       border: transparent;
 
-      font-size: 2.35em;
+      font-size: 4em;
       text-align: center;
 
 
@@ -430,7 +431,7 @@ body {
       background-color: transparent;
       border: transparent;
 
-      font-size: 2.35em;
+      font-size: 4em;
       text-align: center;
 
 
@@ -448,6 +449,20 @@ body {
 
     /*mmmmmmmmmmmmmmmmmm JASON AND CHRIS"S MODALS mmmmmmmmmmmmmmmmmm*/
 
+
+
+
+    /* +++ NEW FOR LARGE DEVICES +++ */
+    /* This is the actual modals size so it can be larger and fit more text about them */
+    .modal-dialog{
+      max-width: 850px;
+      margin: 2rem auto;
+    }
+
+
+
+
+
     /* This is the headers container */
     .modal-header{
       background-color: #64c3a3;
@@ -456,7 +471,7 @@ body {
 
     /* Actual text in the header */
     .modal-title{
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
 
     /* This is the button in the header */
@@ -472,7 +487,13 @@ body {
 
     /* Everything in the main content under the header */
     .modal-body{
-      font-size: 1.3rem;
+      font-size: 1.5rem;
+
+      /* These 2 adds spacing between each word and the line break between sentences*/
+      line-height: 1.5;
+      word-spacing: 2px;
+
+      padding: 2rem;
 
       color: #000;
     }
@@ -491,14 +512,14 @@ body {
       box-shadow: #2d234266 0 2px 4px,#2d23424d 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
       box-sizing: border-box;
 
-      transform: scale(1.3); 
+      transform: scale(1.5); 
 
       transition: box-shadow .15s,transform .15s ease-in-out;
     }
     .close_button:hover{
       background-color: #64c3a3;
       box-shadow: #2d234266 0 4px 8px, #2d23424d 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-      transform: scale(1.5);
+      transform: scale(1.7);
     }
 
 
@@ -512,19 +533,23 @@ body {
       color: #fff;
       text-decoration: none;
 
+
+
       /* This is needed for the grow effect on the hover*/
       transition: all .2s ease-in-out;
     }
     .tel_and_mailto:hover, .tel_and_mailto:focus{
       color: #fff;
-      font-size: 1.19em;
+
+      font-size: 1.3em;
 
       transform: scale(1.5);
     }
 
     
     .follow_us_text{
-      font-size: 1.55em;
+
+      font-size: 1.7em;
 
       /* Space under the "Follow us on Instagram and Facebook"*/
       margin-bottom: 1.5rem;
@@ -539,7 +564,7 @@ body {
 
     /* This is the facebook and instagram logos*/
     .social_media_icons{
-      font-size: 3.5em;
+      font-size: 4.5em;
 
       padding-right: 1.5em;
       padding-left: 1.5em;
@@ -608,7 +633,7 @@ body {
 
   color: #FFF;
 
-  width: 70%;
+  width: 100%;
 
   padding: 10px;
 
@@ -636,13 +661,20 @@ body {
 }
 
 
+/* +++ NEWLY ADDED +++*/
+/* This gives the cards more room in between one another from left to right */
+.what_we_do_card{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 
 /* This is the space between cards using the spacers added */
 .services_hidden_span_spacer::before {
   content: " ";
   display: block;
   visibility: hidden;
-  height: 30px; /* Adjust the height to control the spacing between cards */
+  height: 50px; /* Adjust the height to control the spacing between cards */
 }
 
 
@@ -652,11 +684,12 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem; 
 
-  /* MAKES SURE THE TITLES DON'T GO TO FAR OFF CARD */
+  /* MAKES SURE THE TITLES DON'T GO TO FAR OFF CARD 
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+  */
 
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 
@@ -664,13 +697,18 @@ body {
 .card-img-top {
   padding: 10px;
 
-  height: 30vw;
+  height: 27vw;
   width: auto;
 }
 
 /* This is the description of the card */
-.card-text{
-  font-size: 1.25rem;
+.what_we_do_text{
+  font-size: 1.3rem;
+
+    /* MAKES SURE THE TITLES DON'T GO TO FAR OFF CARD  */
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
 }
 
 /* Equal-height card images, cf. https://stackoverflow.com/a/47698201/1375163*/
@@ -702,6 +740,12 @@ body {
 }
 
 
+/* This is the smaller Middle Review Card Here we are centering it in between the other 2 on the left and right */
+.smaller_review_card{
+  margin-top: 60px;
+}
+
+
 /* This is the space between cards using the spacers added */
 .testimonials_hidden_span_spacer::before {
   content: " ";
@@ -713,7 +757,7 @@ body {
 
 /* This is the text inside the card */
 .testimonials .card-text{
-
+  font-size: 1.3rem;
 }
 
 
@@ -757,7 +801,7 @@ body {
   }
 
   .img-thumbnail:hover{
-    transform:  scale(1.04); 
+    transform:  scale(1.15); 
   }
 
 
@@ -782,6 +826,20 @@ body {
 
 
 
+  /* CCCCCCCCCCCCCCCC CAROUSEL IMAGES CCCCCCCCCCCCCCCC */
+  .carousel_bike_pics{
+    max-height: 65rem; /* Set the maximum height of the images to 100% */
+  }
+  /* CCCCCCCCCCCCCCCC CAROUSEL IMAGES CCCCCCCCCCCCCCCC */
+
+
+
+
+
+
+
+
+
   /*``````````````````````````````` MAIN CONTENT /*``````````````````````````````` */
 
 
@@ -796,6 +854,9 @@ footer{
   background-color: #131212;
   color: #fff;
 
+  /* THIS MAKES IT TO WHERE WHEN THE "Back to Top" text IS HOVERED IT WONT TRY TO MAKE YOU SCROLL HORIZONTALLY */
+  overflow-x: hidden; 
+
   font-size: 1rem;
 
   padding: 15px;
@@ -805,16 +866,22 @@ footer{
 .jump_to_top_link{
   color: #fff;
   text-decoration: none;
+
+
 }
 
 /* Actual Text of Back to top*/
 .jump_to_top_text{
   color: #fff;
   transition: .3s transform ease-in-out;
+
+
 }
 
 .jump_to_top_text:hover{
-  transform: scale(1.05); 
+
+
+  transform: scale(1.08); 
 }
 /*fffffffffffffffffff FOOTER  fffffffffffffffffff*/
 

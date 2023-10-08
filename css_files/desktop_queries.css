@@ -797,6 +797,9 @@ footer{
   background-color: #131212;
   color: #fff;
 
+    /* THIS MAKES IT TO WHERE WHEN THE "Back to Top" text IS HOVERED IT WONT TRY TO MAKE YOU SCROLL HORIZONTALLY */
+    overflow-x: hidden; 
+
   font-size: 1rem;
 
   padding: 15px;
