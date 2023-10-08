@@ -98,7 +98,7 @@ body {
     .welcome_text{
       color: #fff;
       text-transform: capitalize;
-      font-size: 2em;
+      font-size: 4.5em;
 
       font-family: 'Creepster', cursive;
 
@@ -140,13 +140,16 @@ body {
   .establishedIn{
     color: #d6c279;
 
+    font-size: 1.3rem;
+
     font-family: 'Creepster', cursive;
+
   }
 
 
     /* This is the logo that is in the navbar */
     .city_morgue_logo_navbar{
-      max-width: 25rem;
+      max-width: 40rem;
       height: auto;
       
       padding-top: 1em;
@@ -284,7 +287,7 @@ body {
 
       color: #64c3a3;
 
-      font-size: 2rem;
+      font-size: 3.2rem;
 
       /* Adds space between the hr  */
       margin-top: 1.5rem;
@@ -315,10 +318,14 @@ body {
 
     /* The actual Text under the header */
     .informational_text{
-      font-size: 1.2em;
+      font-size: 1.4em;
+
+      /* THIS ENSURES THE TEXT STAYS IN BOUND WITH THE <hr> */
+      padding-left: 2rem;
+      padding-right: 2rem;
 
       /* Adds the same amount of space under text above the hr MAKE THE SAME AS .informational_header*/
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
 
 
@@ -326,7 +333,7 @@ body {
 
     /* Text that says "Click our names below to find out a little about us." */
     .click_our_names{
-      font-size: 0.75rem;
+      font-size: 0.9rem;
     }
 
     /* Holds the chris and jason pic */
@@ -342,7 +349,7 @@ body {
 
     
     .jason_and_chris_pic{
-      max-width: 24rem;
+      max-width: 38rem;
       height: auto;
       object-fit: cover;
 
@@ -381,7 +388,7 @@ body {
       background-color: transparent;
       border: transparent;
 
-      font-size: 1.8em; 
+      font-size: 2.35em;
       text-align: center;
 
 
@@ -423,7 +430,7 @@ body {
       background-color: transparent;
       border: transparent;
 
-      font-size: 1.8em; 
+      font-size: 2.35em;
       text-align: center;
 
 
@@ -449,7 +456,7 @@ body {
 
     /* Actual text in the header */
     .modal-title{
-      font-size: 1.35rem;
+      font-size: 1.8rem;
     }
 
     /* This is the button in the header */
@@ -472,14 +479,12 @@ body {
 
 
 
-
-
-
     /* This is the bottom button that says Close */
     .close_button{
       background-color: #d4c47f;
 
-      padding-bottom: 5px;
+      padding-top: 2.5px;
+      padding-bottom: 4px;
 
       border-radius: 5px;
       border-width: 0;
@@ -501,7 +506,7 @@ body {
 
 
 
-    /*ccccc CONTACT US ccccc */
+    /*ccccccccccccccccccccccccc CONTACT US ccccccccccccccccccccccccc */
     /* This is under CONTACT US it is the direct call and email to Chris*/
     .tel_and_mailto{
       color: #fff;
@@ -512,14 +517,14 @@ body {
     }
     .tel_and_mailto:hover, .tel_and_mailto:focus{
       color: #fff;
-      font-size: 1.15em;
+      font-size: 1.19em;
 
       transform: scale(1.5);
     }
 
     
     .follow_us_text{
-      font-size: 1.5em;
+      font-size: 1.55em;
 
       /* Space under the "Follow us on Instagram and Facebook"*/
       margin-bottom: 1.5rem;
@@ -534,7 +539,7 @@ body {
 
     /* This is the facebook and instagram logos*/
     .social_media_icons{
-      font-size: 2.2em;
+      font-size: 3.5em;
 
       padding-right: 1.5em;
       padding-left: 1.5em;
@@ -551,7 +556,7 @@ body {
     }
 
 
-    /*ccccc CONTACT US ccccc */
+    /*ccccccccccccccccccccccccc CONTACT US ccccccccccccccccccccccccc */
 
     @keyframes reveal { /*  */
       from { opacity: 0; clip-path: inset(0% 100% 0% 100%); }
@@ -592,18 +597,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* [][][][][][][][][][][][] SERVICES CARDS [][][][][][][][][][][][]*/
 
 /* This is the actual container for the  Services we offer cards */
@@ -615,7 +608,7 @@ body {
 
   color: #FFF;
 
-  width: 80%;
+  width: 70%;
 
   padding: 10px;
 
@@ -659,7 +652,11 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem; 
 
-  font-size: 1.8rem;
+  /* MAKES SURE THE TITLES DON'T GO TO FAR OFF CARD */
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+
+  font-size: 2rem;
 }
 
 
@@ -667,50 +664,18 @@ body {
 .card-img-top {
   padding: 10px;
 
-  height: 50vw;
+  height: 30vw;
   width: auto;
 }
 
 /* This is the description of the card */
 .card-text{
-  font-size: 1.1rem;
+  font-size: 1.25rem;
 }
-
-
 
 /* Equal-height card images, cf. https://stackoverflow.com/a/47698201/1375163*/
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 376px) {
 
-  /* Space in between each of the cards*/
-  /* This is a hidden span spacer that was added to be put in the cards to add proper spacing between each card */
-
-  .card-img-top {
-      height: 50vw;
-      width: auto;
-
-
-  }
-}
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .card-img-top {
-      height: 16vw;
-  }
-}
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .card-img-top {
-      height: 11vw;
-  }
-}
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 992px) {
-  .card-img-top {
-      height: 20vw;
-  }
-}
 /* [][][][][][][][][] SERVICES CARDS [][][][][][][][][]*/
 
 
@@ -785,6 +750,9 @@ body {
     background-color: transparent;
     border: transparent;
 
+    height: auto;
+    width: 35rem;
+
     transition: .3s transform ease-in-out;
   }
 
@@ -828,7 +796,7 @@ footer{
   background-color: #131212;
   color: #fff;
 
-  font-size: 0.7rem;
+  font-size: 1rem;
 
   padding: 15px;
 } 
@@ -850,4 +818,4 @@ footer{
 }
 /*fffffffffffffffffff FOOTER  fffffffffffffffffff*/
 
-}/* 11111111111111111111111111111 FOR LARGE DESKTOPS 1111111111111111111111111111*/
+}/* 11111111111111111111111111111 FOR DESKTOP 1111111111111111111111111111*/

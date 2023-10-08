@@ -479,7 +479,8 @@ body {
     .close_button{
       background-color: #d4c47f;
 
-      padding-bottom: 5px;
+      padding-top: 2.5px;
+      padding-bottom: 3.5px;
 
       border-radius: 5px;
       border-width: 0;

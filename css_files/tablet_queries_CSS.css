@@ -415,7 +415,7 @@ body {
 
       transform: translate(-50%, -50%); 
 
-      color: #64c3a3; 
+      color: #ffed9a; 
 
       /* 3D Text Shadow */
       text-shadow: 
@@ -483,8 +483,8 @@ body {
     .close_button{
       background-color: #d4c47f;
 
-      padding-top: 5px;
-      padding-bottom: 5px;
+      padding-top: 2.5px;
+      padding-bottom: 4px;
 
       border-radius: 5px;
       border-width: 0;
@@ -608,7 +608,7 @@ body {
 
   color: #FFF;
 
-  width: 80%;
+  width: 70%;
 
   padding: 10px;
 
@@ -751,7 +751,7 @@ body {
     border: transparent;
 
     height: auto;
-    width: 50rem;
+    width: 35rem;
 
     transition: .3s transform ease-in-out;
   }
