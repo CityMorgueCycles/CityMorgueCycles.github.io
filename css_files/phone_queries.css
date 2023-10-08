@@ -36,7 +36,7 @@ html {
 
 
 body {
-  /* background-image: radial-gradient( circle farthest-corner at 50.3% 44.5%,  #223242 30%, #131212 100.2% ); */
+  background-image: radial-gradient( circle farthest-corner at 50.3% 44.5%,  #223242 30%, #131212 100.2% ); 
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
 }
@@ -51,11 +51,11 @@ body {
 /* 11111111111111111111111111111 FOR CELLPHONES 1111111111111111111111111111*/
 @media screen and (min-width: 320px) {
 
-  
+  /*
   body {
     background-color: blue;
   }
-  
+  */
 
   /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -726,10 +726,7 @@ body {
 }
 
 
-/* This is the text inside the card */
-.testimonials .card-text{
 
-}
 
 
 /* This is the circle with the " */
