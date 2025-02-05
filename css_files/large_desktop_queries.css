@@ -626,7 +626,6 @@ body {
 
 /* This is the actual container for the  Services we offer cards */
 .card{
-
   /* CENTERS CARDS*/
   margin-left: auto;
   margin-right: auto;
@@ -634,6 +633,8 @@ body {
   color: #FFF;
 
   width: 100%;
+  max-width: 850px; /* Prevents cards from getting too large */
+
 
   padding: 10px;
 
@@ -650,8 +651,6 @@ body {
   
 
   transition: .3s transform ease-in-out;    
-
-
 }
 .card:hover{
   transform:  scale(1.05); 
@@ -697,7 +696,8 @@ body {
 .card-img-top {
   padding: 10px;
 
-  height: 27vw;
+  height: 250px; /* Sets a max height for images */
+  object-fit: contain; /* Ensures images fit without distortion */
   width: auto;
 }
 
@@ -827,8 +827,22 @@ body {
 
 
   /* CCCCCCCCCCCCCCCC CAROUSEL IMAGES CCCCCCCCCCCCCCCC */
+  .carousel-div {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-content {
+    width: 80%;
+  }
   .carousel_bike_pics{
-    max-height: 65rem; /* Set the maximum height of the images to 100% */
+    max-height: 900px;
+    height: auto;
+    width: auto;
+    object-fit: cover;
   }
   /* CCCCCCCCCCCCCCCC CAROUSEL IMAGES CCCCCCCCCCCCCCCC */
 
